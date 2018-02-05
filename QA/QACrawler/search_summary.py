@@ -5,6 +5,7 @@ from urllib import quote
 
 from QA.Tools import Html_Tools as To
 from QA.Tools import TextProcess as T
+import pynlpir
 
 '''
 对百度、Bing 的搜索摘要进行答案的检索
@@ -14,14 +15,22 @@ from QA.Tools import TextProcess as T
 def kwquery(query):
     #分词 去停用词 抽取关键词
     keywords = []
-    words = T.postag(query)
-    for k in words:
-        # 只保留名词
-        if k.flag.__contains__("n"):
-            # print k.flag
-            # print k.word
-            keywords.append(k.word)
+    pynlpir.open()
+    keywords = pynlpir.get_key_words(query, weighted=True)
+    print "关键词："
+    for key_word in keywords:
+        print key_word[0], '\t', key_word[1]
+    pynlpir.close()
 
+
+    # words = T.postag(query)
+    # for k in words:
+    #     # 只保留名词
+    #     if k.flag.__contains__("n"):
+    #         # print k.flag
+    #         # print k.word
+    #         keywords.append(k.word)
+    req=To.Session()
     answer = []
     text = ''
     # 找到答案就置1
@@ -29,7 +38,7 @@ def kwquery(query):
 
 
     # 抓取百度前10条的摘要
-    soup_baidu = To.get_html_baidu('https://www.baidu.com/s?wd='+quote(query))
+    soup_baidu = To.get_html_baidu('https://www.baidu.com/s?wd='+quote(query),req)
 
     for i in range(1,10):
         if soup_baidu == None:
@@ -118,7 +127,7 @@ def kwquery(query):
             else:
                 print "百度知道图谱找到答案"
                 url = r['href']
-                zhidao_soup = To.get_html_zhidao(url)
+                zhidao_soup = To.get_html_zhidao(url,req)
                 r = zhidao_soup.find(class_='bd answer').find('pre')
                 if r==None:
                     continue
@@ -128,14 +137,14 @@ def kwquery(query):
 
         if results.find("h3") != None:
             # 百度知道
-            if results.find("h3").find("a").get_text().__contains__(u"百度知道") and (i == 1 or i ==2):
+            if results.find("h3").find("a").get_text().__contains__(u"百度知道") and (i == 1 or i ==2 or i==3):
                 url = results.find("h3").find("a")['href']
                 if url == None:
                     print "百度知道图谱找不到答案"
                     continue
                 else:
                     print "百度知道图谱找到答案"
-                    zhidao_soup = To.get_html_zhidao(url)
+                    zhidao_soup = To.get_html_zhidao(url,req)
 
                     r = zhidao_soup.find(class_='bd answer').find('pre')
                     if r == None:
@@ -145,14 +154,15 @@ def kwquery(query):
                     break
 
             # 百度百科
-            if results.find("h3").find("a").get_text().__contains__(u"百度百科") and (i == 1 or i ==2):
+            # if results.find("h3").find("a").get_text().__contains__(u"百度百科") and (i == 1 or i ==2 or i==3):
+            if results.find("h3").find("a").get_text().__contains__(u"百度百科") :
                 url = results.find("h3").find("a")['href']
                 if url == None:
                     print "百度百科找不到答案"
                     continue
                 else:
                     print "百度百科找到答案"
-                    baike_soup = To.get_html_baike(url)
+                    baike_soup = To.get_html_baike(url,req)
 
                     r = baike_soup.find(class_='lemma-summary')
                     if r == None:
@@ -168,7 +178,7 @@ def kwquery(query):
         return answer
 
     #获取bing的摘要
-    soup_bing = To.get_html_bing('https://www.bing.com/search?q='+quote(query))
+    soup_bing = To.get_html_bing('https://www.bing.com/search?q='+quote(query),req)
     # 判断是否在Bing的知识图谱中
     # bingbaike = soup_bing.find(class_="b_xlText b_emphText")
     bingbaike = soup_bing.find(class_="bm_box")
@@ -197,7 +207,7 @@ def kwquery(query):
                     continue
                 else:
                     print "Bing网典找到答案"
-                    bingwd_soup = To.get_html_bingwd(url)
+                    bingwd_soup = To.get_html_bingwd(url,req)
 
                     r = bingwd_soup.find(class_='bk_card_desc').find("p")
                     if r == None:
@@ -219,7 +229,7 @@ def kwquery(query):
     # 如果再两家搜索引擎的知识图谱中都没找到答案，那么就分析摘要
     if flag == 0:
         #分句
-        cutlist = [u"。",u"?",u".", u"_", u"-",u":",u"！",u"？","\n"]
+        cutlist = [u"。",u".",u"?",u"？", u"_", u"-",u":",u"：",u"！",u"!","\n"]
         temp = ''
         sentences = []
         for i in range(0,len(text)):
@@ -237,7 +247,7 @@ def kwquery(query):
         key_sentences = {}
         for s in sentences:
             for k in keywords:
-                if k in s:
+                if k[0] in s:
                     key_sentences[s]=1
 
 

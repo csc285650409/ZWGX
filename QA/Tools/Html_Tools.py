@@ -5,71 +5,68 @@ import re
 from bs4 import BeautifulSoup
 import requests,time
 
-
+class Session:
+    session = requests.session()
+    headers={'User-Agent':'Mozilla/5.0 (X11; U; Linux i686)Gecko/20071127 Firefox/2.0.0.11'}
 '''
 获取百度知道的页面
 '''
-def get_html_zhidao(url):
-    headers = {'User-Agent':'Mozilla/5.0 (X11; U; Linux i686)Gecko/20071127 Firefox/2.0.0.11'}
-    soup_zhidao = BeautifulSoup(requests.get(url=url, headers=headers).content, "lxml")
+def get_html_zhidao(url,req):
+    soup = BeautifulSoup(req.session.get(url=url, headers=req.headers).content, "lxml")
 
     # 去除无关的标签
-    [s.extract() for s in soup_zhidao(['script', 'style','img'])]
+    [s.extract() for s in soup(['script', 'style','img'])]
     # print(soup.prettify())
-    return soup_zhidao
+    return soup
 
 '''
 获取百度百科的页面
 '''
-def get_html_baike(url):
-    headers = {'User-Agent':'Mozilla/5.0 (X11; U; Linux i686)Gecko/20071127 Firefox/2.0.0.11'}
-    soup_baike = BeautifulSoup(requests.get(url=url, headers=headers).content, "lxml")
+def get_html_baike(url,req):
+    soup = BeautifulSoup(req.session.get(url=url, headers=req.headers).content, "lxml")
 
     # 去除无关的标签
-    [s.extract() for s in soup_baike(['script', 'style', 'img', 'sup'])]
+    [s.extract() for s in soup(['script', 'style', 'img', 'sup'])]
     # print(soup.prettify())
-    return soup_baike
+    return soup
 
 
 
 '''
 获取Bing网典的页面
 '''
-def get_html_bingwd(url):
-    headers = {'User-Agent':'Mozilla/5.0 (X11; U; Linux i686)Gecko/20071127 Firefox/2.0.0.11'}
-    soup_bingwd = BeautifulSoup(requests.get(url=url, headers=headers).content, "lxml")
+def get_html_bingwd(url,req):
+    soup = BeautifulSoup(req.session.get(url=url, headers=req.headers).content, "lxml")
 
     # 去除无关的标签
-    [s.extract() for s in soup_bingwd(['script', 'style', 'img', 'sup'])]
+    [s.extract() for s in soup(['script', 'style', 'img', 'sup'])]
     # print(soup.prettify())
-    return soup_bingwd
+    return soup
 
 
 
 '''
 获取百度搜索的结果
 '''
-def get_html_baidu(url):
-    headers = {'User-Agent':'Mozilla/5.0 (X11; U; Linux i686)Gecko/20071127 Firefox/2.0.0.11'}
-    soup_baidu = BeautifulSoup(requests.get(url=url, headers=headers).content.decode('utf-8'), "lxml")
+def get_html_baidu(url,req):
+    soup = BeautifulSoup(req.session.get(url=url, headers=req.headers).content, "lxml")
 
     # 去除无关的标签
-    [s.extract() for s in soup_baidu(['script', 'style','img'])]
+    [s.extract() for s in soup(['script', 'style','img'])]
     # print(soup.prettify())
-    return soup_baidu
+    return soup
 
 
 '''
 获取Bing搜索的结果
 '''
-def get_html_bing(url):
+def get_html_bing(url,req):
     # url = 'http://global.bing.com/search?q='+word
-    headers = {'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:22.0) Gecko/20100101 Firefox/22.0'}
-    soup_bing = BeautifulSoup(requests.get(url=url, headers=headers).content.decode('utf-8'), "lxml")
+    soup = BeautifulSoup(req.session.get(url=url, headers=req.headers).content, "lxml")
 
     # 去除无关的标签
     # [s.extract() for s in soup_bing(['script', 'style','img'])]
-    return soup_bing
+    return soup
 
 
 
