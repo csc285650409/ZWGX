@@ -1,20 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d0287a7f-a81e-481f-a6e2-4176ef133cd2" name="默认的" comment="修复爬取内容丢失问题&#10;添加提取关键字NLPIR模块">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/QA/Tools/fenci.py" />
-      <change beforePath="$PROJECT_DIR$/.idea/ZWGX.iml" afterPath="$PROJECT_DIR$/.idea/ZWGX.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="d0287a7f-a81e-481f-a6e2-4176ef133cd2" name="默认的" comment="解决无法回答时异常退出问题&amp;&amp;加入了全国2631所高校的名称分词">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/QA/MainProgram.py" afterPath="$PROJECT_DIR$/QA/MainProgram.py" />
-      <change beforePath="$PROJECT_DIR$/QA/NLPIR.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/QA/Tools/TextProcess.py" afterPath="$PROJECT_DIR$/QA/Tools/TextProcess.py" />
-      <change beforePath="$PROJECT_DIR$/QA/resources/Common conversation.aiml" afterPath="$PROJECT_DIR$/QA/resources/Common conversation.aiml" />
       <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="$PROJECT_DIR$/server.py" afterPath="$PROJECT_DIR$/server.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -87,7 +76,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="qa.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="qa.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/QA/qa.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="216">
@@ -95,6 +84,16 @@
               <folding>
                 <element signature="e#13#24#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="81">
+              <caret line="3" column="36" lean-forward="false" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -193,6 +192,7 @@
         <option value="$PROJECT_DIR$/QA/qa.py" />
         <option value="$PROJECT_DIR$/QA/Tools/TextProcess.py" />
         <option value="$PROJECT_DIR$/QA/Tools/fenci.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -536,7 +536,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519623924292</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="解决无法回答时异常退出问题&amp;&amp;加入了全国2631所高校的名称分词">
+      <created>1520346392359</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1520346392359</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView">
@@ -691,13 +698,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="7" column="2" lean-forward="true" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -921,6 +921,14 @@
           <folding>
             <element signature="e#13#24#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="36" lean-forward="false" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
