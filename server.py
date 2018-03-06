@@ -62,7 +62,7 @@ def QA(input_message,mybot):
             if response == "":
                 reply = mybot.respond('找不到答案')
                 findAns = True
-                print 'Eric：' + reply
+                print 'Frank：' + reply
 
             # 百科搜索
             elif response[0] == '#':
@@ -80,7 +80,7 @@ def QA(input_message,mybot):
                     ans = baike.query(entity, attr)
                     # 如果命中答案
                     if type(ans) == list:
-                        print 'Eric：' + QAT.ptranswer(ans, False)
+                        print 'Frank：' + QAT.ptranswer(ans, False)
                         reply = QAT.ptranswer(ans, False)
                         findAns = True
                     elif ans.decode('utf-8').__contains__(u'::找不到'):
@@ -96,25 +96,25 @@ def QA(input_message,mybot):
                 if (findAns == False):
                     if len(ans) == 0:
                         ans = mybot.respond('找不到答案')
-                        print 'Eric：' + ans
+                        print 'Frank：' + ans
                         reply = ans
                         findAns = True
 
                     elif len(ans) > 1:
                         print "不确定候选答案"
-                        print 'Eric: '
+                        print 'Frank: '
                         for a in ans:
                             print a.encode("utf8")
                             reply += a.encode("utf8") + '\n'
                         findAns = True
                     else:
-                        print 'Eric：' + ans[0].encode("utf8")
+                        print 'Frank：' + ans[0].encode("utf8")
                         reply = ans[0].encode("utf8")
                         findAns = True
 
             # 匹配模版
             else:
-                print 'Eric：' + response
+                print 'Frank：' + response
                 reply = response
                 findAns = True
 

@@ -1,8 +1,10 @@
 #coding:utf8
 
+import os
 import jieba
 import jieba.posseg as pseg
-import os,sys
+import fenci
+
 
 '''
 initialize jieba Segment

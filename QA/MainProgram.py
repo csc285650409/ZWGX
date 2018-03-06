@@ -38,10 +38,10 @@ if __name__ == '__main__':
 | |   '.___`-.   | || |  | |\ \| |   | || |   / /__\ \   | || |   |  __'.    | || |   |  _|  _   | |
 | |  |`\____) |  | || | _| |_\   |_  | || | _/ /    \ \_ | || |  _| |  \ \_  | || |  _| |___/ |  | |
 | |  |_______.'  | || ||_____|\____| | || ||____|  |____|| || | |____||____| | || | |_________|  | |
-| |              | || |              | || |              | || |              | || |              | |
-| '--------------' || '--------------' || '--------------' || '--------------' || '--------------' |
+||              | || |              | || |              | || |              | || |              | |
+|  '--------------' || '--------------' || '--------------' || '--------------' || '--------------' |
  '----------------'  '----------------'  '----------------'  '----------------'  '----------------'
- Eric：你好，我是Eric。╭(╯^╰)╮
+ Frank：你好，我是Frank。╭(╯^╰)╮
     '''
 
     while True:
@@ -74,7 +74,7 @@ if __name__ == '__main__':
 
             if response == "":
                 ans = mybot.respond('找不到答案')
-                print 'Eric：' + ans
+                print 'Frank：' + ans
             # 百科搜索
             elif response[0] == '#':
                 # 匹配百科
@@ -91,7 +91,7 @@ if __name__ == '__main__':
                     ans = baike.query(entity, attr)
                     # 如果命中答案
                     if type(ans) == list:
-                        print 'Eric：' + QAT.ptranswer(ans,False)
+                        print 'Frank：' + QAT.ptranswer(ans,False)
                         continue
                     elif ans.decode('utf-8').__contains__(u'::找不到'):
                         #百度摘要+Bing摘要
@@ -106,20 +106,20 @@ if __name__ == '__main__':
                 print "======="
                 if len(ans) == 0:
                     ans = mybot.respond('找不到答案')
-                    print 'Eric：' + ans
+                    print 'Frank：' + ans
                 elif len(ans) >1:
                     print "不确定候选答案"
-                    print 'Eric: '
+                    print 'Frank: '
                     for a in ans:
                         print a.encode("utf8")
                 else:
-                    print 'Eric：' + ans[0].encode("utf8")
+                    print 'Frank：' + ans[0].encode("utf8")
 
 
 
             # 匹配模版
             else:
-                print 'Eric：' + response
+                print 'Frank：' + response
 
 
 

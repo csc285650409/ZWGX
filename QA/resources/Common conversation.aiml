@@ -13,13 +13,45 @@
     <template>
       <random>
         <li>不知道啊</li>
-        <li>纳尼？？? </li>
-        <li>这我就不知道了</li>
+        <li>纳尼？？</li>
+        <li>这我就不知道了,您自己去查查吧</li>
         <li>。。。不知道额</li>
         <li>唔... 爸爸没有教我怎么回答... </li>
       </random>
     </template>
   </category>
+
+  <category>
+   <pattern>好困想睡觉</pattern>
+   <template>
+     <random>
+     <li>好晚安哦</li>
+     <li>早睡早起身体好</li>
+     <li>睡前喝杯热牛奶吧</li>
+     </random>
+     </template>
+</category>
+
+<category>
+   <pattern>早饭吃什么呢</pattern>
+   <template>
+     <random>
+     <li>牛奶配面包</li>
+     <li>煎饼果子</li>
+     </random>
+   </template>
+</category>
+
+<category>
+   <pattern>晚上吃什么呢</pattern>
+   <template>
+     <random>
+     <li>来一碗热腾腾的面条吧</li>
+     <li>吃个盖浇饭吧</li>
+     <li>馄饨怎么样</li>
+     </random>
+   </template>
+</category>
 
    <category>
         <pattern>程思聪</pattern>
