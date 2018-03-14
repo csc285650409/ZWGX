@@ -6,7 +6,9 @@ from bs4 import BeautifulSoup
 import requests,time
 
 class Session:
-    session = requests.session()
+    def __init__(self):
+        self.session=requests.session()
+    # session = requests.session()
     headers={'User-Agent':'Mozilla/5.0 (X11; U; Linux i686)Gecko/20071127 Firefox/2.0.0.11'}
 '''
 获取百度知道的页面

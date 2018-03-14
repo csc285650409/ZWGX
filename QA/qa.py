@@ -15,9 +15,10 @@ if(__name__=='__main__'):
 
     while 1:
         input_message = raw_input("Enter your message >> ")
-        try:
-            server.QA(input_message,mybot)
-        except:
-            print '很抱歉啦，这个我也母鸡啊！'
+        server.QA(input_message, mybot)
+        # try:
+        #     server.QA(input_message,mybot)
+        # except:
+        #     print '很抱歉啦，这个我也母鸡啊！'
 
 

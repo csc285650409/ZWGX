@@ -31,6 +31,7 @@ def kwquery(query):
     #         # print k.word
     #         keywords.append(k.word)
     req=To.Session()
+    # req.session.cookies.clear()
     answer = []
     text = ''
     # 找到答案就置1
@@ -123,27 +124,29 @@ def kwquery(query):
             # print results.attrs["mu"]
             r = results.find(class_='op_best_answer_question_link')
             if r == None:
-                print "百度知道图谱找不到答案"
-            else:
-                print "百度知道图谱找到答案"
-                url = r['href']
-                zhidao_soup = To.get_html_zhidao(url,req)
-                r = zhidao_soup.find(class_='bd answer').find('pre')
+                r =results.find(class_='op_generalqa_answer_title').a
                 if r==None:
-                    continue
-                answer.append(r.get_text())
-                flag = 1
-                break
+                    print "百度知道图谱找不到答案"
+                else:
+                    print "百度知道图谱找到答案"
+                    url = r['href']
+                    zhidao_soup = To.get_html_zhidao(url,req)
+                    r = zhidao_soup.find(class_='bd answer').find('pre')
+                    if r==None:
+                        continue
+                    answer.append(r.get_text())
+                    flag = 1
+                    break
 
         if results.find("h3") != None:
             # 百度知道
             if results.find("h3").find("a").get_text().__contains__(u"百度知道") and (i == 1 or i ==2 or i==3):
                 url = results.find("h3").find("a")['href']
                 if url == None:
-                    print "百度知道图谱找不到答案"
+                    print "百度知道找不到答案"
                     continue
                 else:
-                    print "百度知道图谱找到答案"
+                    print "百度知道找到答案"
                     zhidao_soup = To.get_html_zhidao(url,req)
 
                     r = zhidao_soup.find(class_='bd answer').find('pre')
@@ -291,7 +294,7 @@ def kwquery(query):
                 # print st[1]
                 answer.append(st[0])
         # print answer
-
+    # del req
     return answer
 
 
