@@ -53,6 +53,8 @@ def QA(input_message,mybot):
             words = T.postag(input_message)
             for w in words:
                 print w.word, w.flag
+                # if w.flag == 'x' or w.flag == 'nt':
+                #     school=True
             response = mybot.respond(input_message.strip())
 
             print "======="

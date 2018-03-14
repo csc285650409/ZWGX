@@ -124,19 +124,30 @@ def kwquery(query):
             # print results.attrs["mu"]
             r = results.find(class_='op_best_answer_question_link')
             if r == None:
-                r =results.find(class_='op_generalqa_answer_title').a
+                r =results.find(class_='op_generalqa_answer_title')
                 if r==None:
                     print "百度知道图谱找不到答案"
                 else:
+                    r=r.a
                     print "百度知道图谱找到答案"
                     url = r['href']
-                    zhidao_soup = To.get_html_zhidao(url,req)
+                    zhidao_soup = To.get_html_zhidao(url, req)
                     r = zhidao_soup.find(class_='bd answer').find('pre')
-                    if r==None:
+                    if r == None:
                         continue
                     answer.append(r.get_text())
                     flag = 1
                     break
+            else:
+                print "百度知道图谱找到答案"
+                url = r['href']
+                zhidao_soup = To.get_html_zhidao(url,req)
+                r = zhidao_soup.find(class_='bd answer').find('pre')
+                if r==None:
+                    continue
+                answer.append(r.get_text())
+                flag = 1
+                break
 
         if results.find("h3") != None:
             # 百度知道
@@ -228,73 +239,76 @@ def kwquery(query):
 
     # print text
 
+    # 如果再两家搜索引擎的知识图谱中都没找到答案，那么就不知道
+    if flag==0:
+        answer.append(u"很抱歉，这个我也母鸡啊！")
 
-    # 如果再两家搜索引擎的知识图谱中都没找到答案，那么就分析摘要
-    if flag == 0:
-        #分句
-        cutlist = [u"。",u".",u"?",u"？", u"_", u"-",u":",u"：",u"！",u"!","\n"]
-        temp = ''
-        sentences = []
-        for i in range(0,len(text)):
-            if text[i] in cutlist:
-                if temp == '':
-                    continue
-                else:
-                    # print temp
-                    sentences.append(temp)
-                temp = ''
-            else:
-                temp += text[i]
-
-        # 找到含有关键词的句子,去除无关的句子
-        key_sentences = {}
-        for s in sentences:
-            for k in keywords:
-                if k[0] in s:
-                    key_sentences[s]=1
-
-
-        # 根据问题制定规则
-
-        # 识别人名
-        target_list = {}
-        for ks in key_sentences:
-            # print ks
-            words = T.postag(ks)
-            for w in words:
-                # print "====="
-                # print w.word
-                if w.flag == ("nr"):
-                    if target_list.has_key(w.word):
-                        target_list[w.word] += 1
-                    else:
-                        target_list[w.word] = 1
-
-        # 找出最大词频
-        sorted_lists = sorted(target_list.items(), lambda x, y: cmp(x[1], y[1]), reverse=True)
-        # print len(target_list)
-        #去除问句中的关键词
-        sorted_lists2 = []
-        # 候选队列
-        for i, st in enumerate(sorted_lists):
-            # print "1 "+st[0]
-            # print st
-            if st[0] in keywords:
-                continue
-            else:
-                sorted_lists2.append(st)
-
-        print "返回前3个词频"
-        answer = []
-        for i,st in enumerate(sorted_lists2):
-            # print st[0]
-            # print st[1]
-            if i< 3:
-                # print st[0]
-                # print st[1]
-                answer.append(st[0])
-        # print answer
-    # del req
+    # # 如果再两家搜索引擎的知识图谱中都没找到答案，那么就分析摘要
+    # if flag == 0:
+    #     #分句
+    #     cutlist = [u"。",u".",u"?",u"？", u"_", u"-",u":",u"：",u"！",u"!","\n"]
+    #     temp = ''
+    #     sentences = []
+    #     for i in range(0,len(text)):
+    #         if text[i] in cutlist:
+    #             if temp == '':
+    #                 continue
+    #             else:
+    #                 # print temp
+    #                 sentences.append(temp)
+    #             temp = ''
+    #         else:
+    #             temp += text[i]
+    #
+    #     # 找到含有关键词的句子,去除无关的句子
+    #     key_sentences = {}
+    #     for s in sentences:
+    #         for k in keywords:
+    #             if k[0] in s:
+    #                 key_sentences[s]=1
+    #
+    #
+    #     # 根据问题制定规则
+    #
+    #     # 识别人名
+    #     target_list = {}
+    #     for ks in key_sentences:
+    #         # print ks
+    #         words = T.postag(ks)
+    #         for w in words:
+    #             # print "====="
+    #             # print w.word
+    #             if w.flag == ("nr"):
+    #                 if target_list.has_key(w.word):
+    #                     target_list[w.word] += 1
+    #                 else:
+    #                     target_list[w.word] = 1
+    #
+    #     # 找出最大词频
+    #     sorted_lists = sorted(target_list.items(), lambda x, y: cmp(x[1], y[1]), reverse=True)
+    #     # print len(target_list)
+    #     #去除问句中的关键词
+    #     sorted_lists2 = []
+    #     # 候选队列
+    #     for i, st in enumerate(sorted_lists):
+    #         # print "1 "+st[0]
+    #         # print st
+    #         if st[0] in keywords:
+    #             continue
+    #         else:
+    #             sorted_lists2.append(st)
+    #
+    #     print "返回前3个词频"
+    #     answer = []
+    #     for i,st in enumerate(sorted_lists2):
+    #         # print st[0]
+    #         # print st[1]
+    #         if i< 3:
+    #             # print st[0]
+    #             # print st[1]
+    #             answer.append(st[0])
+    #     # print answer
+    del req
     return answer
 
 
