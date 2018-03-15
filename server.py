@@ -2,7 +2,11 @@
 
 import aiml
 import os
+import pymysql
+import sys
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
 from QA.QACrawler import baike
 from QA.Tools import Html_Tools as QAT
 from QA.Tools import TextProcess as T
@@ -34,6 +38,10 @@ def initQA(mybot):
 def QA(input_message,mybot):
     findAns = False
     reply=''
+    dbname='zwgx' #数据库名
+    dbip='localhost'#数据库IP
+    dbusername='root'#数据库用户名
+    dbpassword='root'#数据库密码
     if len(input_message) > 60:
         reply = mybot.respond("句子长度过长")
         findAns = True
@@ -53,8 +61,35 @@ def QA(input_message,mybot):
             words = T.postag(input_message)
             for w in words:
                 print w.word, w.flag
-                # if w.flag == 'x' or w.flag == 'nt':
-                #     school=True
+
+                # 配对数据库中已存内容
+                if w.flag == 'x' or w.flag == 'nt':
+                    try:
+                        db = pymysql.connect(dbip, dbusername, dbpassword, dbname, charset="utf8")
+                        cursor = db.cursor()
+                        sql=u"SELECT `属性` FROM school WHERE `学校`='"+w.word+"'"
+                        # 执行SQL语句
+                        cursor.execute(sql)
+                        # 获取所有记录列表
+                        results = cursor.fetchall()
+                        if len(results)>0:
+                            for row in results:
+                                reply +=row[0].encode("utf8")
+                                reply+=" ".encode("utf8")
+                                # 打印结果
+                            shuxing=raw_input('Frank：你想了解什么属性 ' + reply+">>")
+                            sql = u"SELECT `内容` FROM school WHERE `学校`='" + w.word + u"'AND `属性`='"+shuxing+"'"
+                            cursor.execute(sql)
+                            results = cursor.fetchall()
+                            if len(results)>0:
+                                print "Frank： "+results[0][0].encode("utf8")
+                                reply=results[0][0].encode("utf8")
+                                return reply
+                            # 关闭数据库连接
+                            db.close()
+                    except Exception as e:
+                        print(e)
+
             response = mybot.respond(input_message.strip())
 
             print "======="
