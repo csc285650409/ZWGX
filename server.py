@@ -4,6 +4,7 @@ import aiml
 import os
 import pymysql
 import sys
+import json
 
 reload(sys)
 sys.setdefaultencoding('utf-8')
@@ -38,6 +39,7 @@ def initQA(mybot):
 def QA(input_message,mybot):
     findAns = False
     reply=''
+    ansdict={}
     dbname='zwgx' #数据库名
     dbip='localhost'#数据库IP
     dbusername='root'#数据库用户名
@@ -67,24 +69,24 @@ def QA(input_message,mybot):
                     try:
                         db = pymysql.connect(dbip, dbusername, dbpassword, dbname, charset="utf8")
                         cursor = db.cursor()
-                        sql=u"SELECT `属性` FROM school WHERE `学校`='"+w.word+"'"
+                        sql=u"SELECT `属性`,`内容` FROM school WHERE `学校`='"+w.word+"'"
                         # 执行SQL语句
                         cursor.execute(sql)
                         # 获取所有记录列表
                         results = cursor.fetchall()
                         if len(results)>0:
                             for row in results:
-                                reply +=row[0].encode("utf8")
-                                reply+=" ".encode("utf8")
-                                # 打印结果
-                            shuxing=raw_input('Frank：你想了解什么属性 ' + reply+">>")
-                            sql = u"SELECT `内容` FROM school WHERE `学校`='" + w.word + u"'AND `属性`='"+shuxing+"'"
-                            cursor.execute(sql)
-                            results = cursor.fetchall()
-                            if len(results)>0:
-                                print "Frank： "+results[0][0].encode("utf8")
-                                reply=results[0][0].encode("utf8")
-                                return reply
+                                ansdict[row[0]]=row[1]
+                                # reply +=row[0].encode("utf8")
+                                # reply+=" ".encode("utf8")
+                            # shuxing=raw_input('Frank：你想了解什么属性 ' + reply+">>")
+                            # sql = u"SELECT `内容` FROM school WHERE `学校`='" + w.word + u"'AND `属性`='"+shuxing+"'"
+                            # cursor.execute(sql)
+                            # results = cursor.fetchall()
+                            # if len(results)>0:
+                            #     print "Frank： "+results[0][0].encode("utf8")
+                            #     reply=results[0][0].encode("utf8")
+                            #     return reply
                             # 关闭数据库连接
                             db.close()
                     except Exception as e:
@@ -155,8 +157,11 @@ def QA(input_message,mybot):
                 reply = response
                 findAns = True
 
-    return reply
-
+    ansdict['baidu']=reply
+    json_s=json.dumps(ansdict)
+    print json_s
+    # return reply
+    return json_s
 
 if __name__ == '__main__':
 
