@@ -6,6 +6,7 @@ import pymysql
 import sys
 import json
 
+
 reload(sys)
 sys.setdefaultencoding('utf-8')
 from QA.QACrawler import baike
