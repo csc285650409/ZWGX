@@ -15,13 +15,15 @@ import pynlpir
 def kwquery(query):
     #分词 去停用词 抽取关键词
     keywords = []
-    pynlpir.open()
-    keywords = pynlpir.get_key_words(query, weighted=True)
-    print "关键词："
-    for key_word in keywords:
-        print key_word[0], '\t', key_word[1]
-    pynlpir.close()
-
+    try:
+        pynlpir.open()
+        keywords = pynlpir.get_key_words(query, weighted=True)
+        print "关键词："
+        for key_word in keywords:
+            print key_word[0], '\t', key_word[1]
+        pynlpir.close()
+    except Exception as ex:
+        print ex
 
     # words = T.postag(query)
     # for k in words:
@@ -107,7 +109,8 @@ def kwquery(query):
 
         #计算器
         if results.attrs.has_key('mu') and i == 1 and results.attrs['mu'].__contains__('http://open.baidu.com/static/calculator/calculator.html'):
-            r = results.find('div').find_all('td')[1].find_all('div')[1]
+            # r = results.find('div').find_all('td')[1].find_all('div')[1]
+            r = results.find(class_='op_new_val_screen_result')
             if r == None:
                 print "计算器找不到答案"
                 # continue
