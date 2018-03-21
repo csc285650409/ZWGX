@@ -41,9 +41,10 @@ def QA(input_message,mybot):
     reply=''
     ansdict={}
     dbname='zwgx' #数据库名
-    dbip='localhost'#数据库IP
+    dbip='examonline.mysql.rds.aliyuncs.com'#数据库IPlocalhost
+    dbport=3306#数据库端口
     dbusername='root'#数据库用户名
-    dbpassword='root'#数据库密码
+    dbpassword='ExamOnline1'#数据库密码root
     if len(input_message) > 60:
         reply = mybot.respond("句子长度过长")
         findAns = True
@@ -67,7 +68,7 @@ def QA(input_message,mybot):
                 # 配对数据库中已存内容
                 if w.flag == 'x' or w.flag == 'nt':
                     try:
-                        db = pymysql.connect(dbip, dbusername, dbpassword, dbname, charset="utf8")
+                        db = pymysql.connect(host=dbip, user=dbusername, passwd=dbpassword, db=dbname, charset="utf8")
                         cursor = db.cursor()
                         sql=u"SELECT `属性`,`内容` FROM school WHERE `学校`='"+w.word+"'"
                         # 执行SQL语句
@@ -159,8 +160,6 @@ def QA(input_message,mybot):
 
     ansdict['baidu']=reply
     json_s=json.dumps(ansdict)
-    print json_s
-    # return reply
     return json_s
 
 if __name__ == '__main__':
@@ -187,6 +186,7 @@ if __name__ == '__main__':
         print "=========="
 
         reply=QA(input_message,mybot)
+        # print reply
         conn.send(reply)
 
 

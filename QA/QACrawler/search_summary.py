@@ -5,7 +5,7 @@ from urllib import quote
 
 from QA.Tools import Html_Tools as To
 from QA.Tools import TextProcess as T
-import pynlpir
+# import pynlpir
 
 '''
 对百度、Bing 的搜索摘要进行答案的检索
@@ -15,15 +15,15 @@ import pynlpir
 def kwquery(query):
     #分词 去停用词 抽取关键词
     keywords = []
-    try:
-        pynlpir.open()
-        keywords = pynlpir.get_key_words(query, weighted=True)
-        print "关键词："
-        for key_word in keywords:
-            print key_word[0], '\t', key_word[1]
-        pynlpir.close()
-    except Exception as ex:
-        print ex
+    # try:
+    #     pynlpir.open()
+    #     keywords = pynlpir.get_key_words(query, weighted=True)
+    #     print "关键词："
+    #     for key_word in keywords:
+    #         print key_word[0], '\t', key_word[1]
+    #     pynlpir.close()
+    # except Exception as ex:
+    #     print ex
 
     # words = T.postag(query)
     # for k in words:
@@ -93,9 +93,9 @@ def kwquery(query):
                 break
 
         if results.attrs.has_key('tpl') and i == 1 and results.attrs['tpl'].__contains__('calendar_new'):
-            r = results.attrs['fk'].replace("6018_","")
-            print r
-
+            # r = results.attrs['fk'].replace("6018_","")
+            r=results.find(class_="op-calendar-new-right-date")
+            # print r
             if r == None:
                 print "百度万年历新版找不到答案"
                 # continue
@@ -106,6 +106,20 @@ def kwquery(query):
                 flag = 1
                 break
 
+        if results.attrs.has_key('tpl') and i <= 2 and results.attrs['tpl'].__contains__('exactqa'):
+            # r = results.attrs['fk'].replace("6018_","")
+            r=results.find(class_="op_exactqa_s_prop c-gap-bottom-small")
+            # print r.a
+
+            if r == None:
+                print "百度黄历找不到答案"
+                # continue
+            else:
+                r=r.a
+                print "百度黄历找到答案"
+                answer.append(r.get_text())
+                flag = 1
+                break
 
         #计算器
         if results.attrs.has_key('mu') and i == 1 and results.attrs['mu'].__contains__('http://open.baidu.com/static/calculator/calculator.html'):
@@ -154,7 +168,7 @@ def kwquery(query):
 
         if results.find("h3") != None:
             # 百度知道
-            if results.find("h3").find("a").get_text().__contains__(u"百度知道") and (i == 1 or i ==2 or i==3):
+            if results.find("h3").find("a").get_text().__contains__(u"百度知道") and (i <=3):
                 url = results.find("h3").find("a")['href']
                 if url == None:
                     print "百度知道找不到答案"
