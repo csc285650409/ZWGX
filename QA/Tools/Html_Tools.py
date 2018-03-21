@@ -1,9 +1,9 @@
 #coding:utf8
 
-import urllib
-import re
+# import urllib
+# import re
 from bs4 import BeautifulSoup
-import requests,time
+import requests
 
 class Session:
     def __init__(self):
@@ -72,36 +72,36 @@ def get_html_bing(url,req):
 
 
 
-'''
-print answer
-'''
-def ptranswer(ans,ifhtml):
-    result = ''
-    # print ans
-    for answer in ans:
-        if ifhtml:
-            print answer
-        else:
-            if answer == u'\n':
-                # print '回车'
-                continue
-            p = re.compile('<[^>]+>')
-            # print '##############'
-            # print answer
-            # print type(answer)
-            # if answer.name == 'br':
-            #     continue
-            # print p.sub("", answer.string)
-            # print '##############'
-            result += p.sub("", answer.string).encode('utf8')
-    return result
-
-
-def ltptools(args):
-    url_get_base = "http://api.ltp-cloud.com/analysis/"
-    result = urllib.urlopen(url_get_base, urllib.urlencode(args)) # POST method
-    content = result.read().strip()
-    return content
+# '''
+# print answer
+# '''
+# def ptranswer(ans,ifhtml):
+#     result = ''
+#     # print ans
+#     for answer in ans:
+#         if ifhtml:
+#             print answer
+#         else:
+#             if answer == u'\n':
+#                 # print '回车'
+#                 continue
+#             p = re.compile('<[^>]+>')
+#             # print '##############'
+#             # print answer
+#             # print type(answer)
+#             # if answer.name == 'br':
+#             #     continue
+#             # print p.sub("", answer.string)
+#             # print '##############'
+#             result += p.sub("", answer.string).encode('utf8')
+#     return result
+#
+#
+# def ltptools(args):
+#     url_get_base = "http://api.ltp-cloud.com/analysis/"
+#     result = urllib.urlopen(url_get_base, urllib.urlencode(args)) # POST method
+#     content = result.read().strip()
+#     return content
 
 
 if __name__ == '__main__':
