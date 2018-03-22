@@ -1552,10 +1552,6 @@
         <template>嗯，不错的哦，我喜欢</template>
     </category>
     <category>
-        <pattern>清华大学</pattern>
-        <template>中国三大高校之一，牛人辈出的地方.</template>
-    </category>
-    <category>
         <pattern>内裤</pattern>
         <template>你这人怎么这么不文明啊</template>
     </category>
@@ -1758,10 +1754,6 @@
     <category>
         <pattern>这套</pattern>
         <template>这种问题有什么意义？</template>
-    </category>
-    <category>
-        <pattern>北京大学</pattern>
-        <template>中国最好的高等学府之一.</template>
     </category>
     <category>
         <pattern>癌症</pattern>
@@ -7088,10 +7080,6 @@
         <template>男的和女的不在一块，其中的一个要找新朋友</template>
     </category>
     <category>
-        <pattern>南京大学</pattern>
-        <template>国内顶尖大学.</template>
-    </category>
-    <category>
         <pattern>震天</pattern>
         <template>地</template>
     </category>
@@ -7826,10 +7814,6 @@
     <category>
         <pattern>纯银</pattern>
         <template>叉子</template>
-    </category>
-    <category>
-        <pattern>南开大学</pattern>
-        <template>虽然听上去和南京大学很像，但其实是天津的大学.</template>
     </category>
     <category>
         <pattern>酒吧里</pattern>

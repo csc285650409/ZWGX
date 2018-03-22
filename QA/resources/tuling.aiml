@@ -5516,10 +5516,6 @@
         <template>嗯，不错的哦，我喜欢</template>
     </category>
     <category>
-        <pattern>清华大学</pattern>
-        <template>中国三大高校之一，牛人辈出的地方.</template>
-    </category>
-    <category>
         <pattern>内裤</pattern>
         <template>你这人怎么这么不文明啊</template>
     </category>
@@ -5722,10 +5718,6 @@
     <category>
         <pattern>这套</pattern>
         <template>这种问题有什么意义？</template>
-    </category>
-    <category>
-        <pattern>北京大学</pattern>
-        <template>中国最好的高等学府之一.</template>
     </category>
     <category>
         <pattern>癌症</pattern>
@@ -10804,10 +10796,6 @@
         <template>男的和女的不在一块，其中的一个要找新朋友</template>
     </category>
     <category>
-        <pattern>南京大学</pattern>
-        <template>国内顶尖大学.</template>
-    </category>
-    <category>
         <pattern>震天</pattern>
         <template>地</template>
     </category>
@@ -11543,10 +11531,7 @@
         <pattern>纯银</pattern>
         <template>叉子</template>
     </category>
-    <category>
-        <pattern>南开大学</pattern>
-        <template>虽然听上去和南京大学很像，但其实是天津的大学.</template>
-    </category>
+
     <category>
         <pattern>酒吧里</pattern>
         <template>不要</template>
@@ -13628,10 +13613,6 @@
         <template>我有那么老吗</template>
     </category>
     <category>
-        <pattern>东华</pattern>
-        <template>过去的纺织大学，有个不错的模特队</template>
-    </category>
-    <category>
         <pattern>谁不</pattern>
         <template>我讨厌你啦，老欺负我～</template>
     </category>
@@ -13806,10 +13787,6 @@
     <category>
         <pattern>瓜子</pattern>
         <template>我喜欢洽洽牌的</template>
-    </category>
-    <category>
-        <pattern>同济大学</pattern>
-        <template>名牌</template>
     </category>
     <category>
         <pattern>石子</pattern>
@@ -16820,10 +16797,6 @@
         <template>我知道你在和我聊天啊！</template>
     </category>
     <category>
-        <pattern>北航</pattern>
-        <template>北京航空航天大学</template>
-    </category>
-    <category>
         <pattern>南京路</pattern>
         <template>来上海时一定要逛逛南京路.</template>
     </category>
@@ -18146,10 +18119,6 @@
     <category>
         <pattern>光通</pattern>
         <template>不知道是什么</template>
-    </category>
-    <category>
-        <pattern>上海大学</pattern>
-        <template>上海的学生一本保底大学，上不去的话，就要混二本了.</template>
     </category>
     <category>
         <pattern>喔喔</pattern>
@@ -22815,10 +22784,7 @@
         <pattern>这碗</pattern>
         <template>碗谁来帮我洗呀</template>
     </category>
-    <category>
-        <pattern>东华大学</pattern>
-        <template>过去的纺织大学，有个不错的模特队</template>
-    </category>
+
     <category>
         <pattern>钢带</pattern>
         <template>钢铁，哈哈</template>
@@ -28634,10 +28600,6 @@
     <category>
         <pattern>波导</pattern>
         <template>手机中的战斗机</template>
-    </category>
-    <category>
-        <pattern>复旦大学</pattern>
-        <template>上海最知名的大学之一，培养了无数人才.</template>
     </category>
     <category>
         <pattern>涂鸦</pattern>
@@ -39552,10 +39514,6 @@
         <template>嗯，不错的哦，我喜欢</template>
     </category>
     <category>
-        <pattern>同济医科大学</pattern>
-        <template>上海的高校</template>
-    </category>
-    <category>
         <pattern>超高产</pattern>
         <template>共产党</template>
     </category>
@@ -44238,10 +44196,6 @@
     <category>
         <pattern>刚坐下</pattern>
         <template>我不是犬夜叉！</template>
-    </category>
-    <category>
-        <pattern>华东政法</pattern>
-        <template>很不错的政法大学.</template>
     </category>
     <category>
         <pattern>太甚</pattern>
@@ -51112,10 +51066,6 @@
         <template>嗯，不错的哦，喜欢</template>
     </category>
     <category>
-        <pattern>清华大学</pattern>
-        <template>中国三大高校之一，牛人辈出的地方。</template>
-    </category>
-    <category>
         <pattern>内裤</pattern>
         <template>这人怎么这么不文明啊</template>
     </category>
@@ -51222,10 +51172,6 @@
     <category>
         <pattern>走吧</pattern>
         <template>去哪儿啊？可不能拐骗未成年儿童啊[bq98]</template>
-    </category>
-    <category>
-        <pattern>北京大学</pattern>
-        <template>中国最好的高等学府之一。</template>
     </category>
     <category>
         <pattern>音像</pattern>
@@ -54132,10 +54078,6 @@
         <template>(好～)，喜欢打乒乓。</template>
     </category>
     <category>
-        <pattern>南京大学</pattern>
-        <template>国内顶尖大学。</template>
-    </category>
-    <category>
         <pattern>再走</pattern>
         <template>去哪儿啊？可不能拐骗未成年儿童啊[bq98]</template>
     </category>
@@ -54482,10 +54424,6 @@
     <category>
         <pattern>忽忽</pattern>
         <template>动词</template>
-    </category>
-    <category>
-        <pattern>南开大学</pattern>
-        <template>虽然听上去和南京大学很像，但其实是天津的大学。</template>
     </category>
     <category>
         <pattern>至死</pattern>
@@ -57994,10 +57932,6 @@
     <category>
         <pattern>压岁钱</pattern>
         <template>有啊，不过都交给妈妈啦。</template>
-    </category>
-    <category>
-        <pattern>上海大学</pattern>
-        <template>上海的学生一本保底大学，上不去的话，就要混二本了。</template>
     </category>
     <category>
         <pattern>喔喔</pattern>
@@ -62862,10 +62796,6 @@
     <category>
         <pattern>进去了</pattern>
         <template>拜拜</template>
-    </category>
-    <category>
-        <pattern>复旦大学</pattern>
-        <template>上海最知名的大学之一，培养了无数人才。</template>
     </category>
     <category>
         <pattern>相亲</pattern>
@@ -70186,10 +70116,6 @@
     <category>
         <pattern>刚坐下</pattern>
         <template>不是犬夜叉！</template>
-    </category>
-    <category>
-        <pattern>华东政法</pattern>
-        <template>很不错的政法大学。</template>
     </category>
     <category>
         <pattern>那么帅</pattern>
