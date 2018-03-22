@@ -64,9 +64,11 @@ def kwquery(query):
             else:
                 # print r.get_text()
                 # print "百度知识图谱找到答案"
-                answer.append(r.get_text().strip())
-                flag = 1
-                break
+                r=r.get_text().strip()
+                if r != "":
+                    answer.append(r)
+                    flag = 1
+                    break
 
 
         #古诗词判断
@@ -77,9 +79,11 @@ def kwquery(query):
             else:
                 # print r.get_text()
                 # print "百度诗词找到答案"
-                answer.append(r.get_text().strip())
-                flag = 1
-                break
+                r=r.get_text().strip()
+                if r != "":
+                    answer.append(r)
+                    flag = 1
+                    break
 
         #万年历 & 日期
         if results.attrs.has_key('mu') and i == 1 and results.attrs['mu'].__contains__('http://open.baidu.com/calendar'):
@@ -89,9 +93,11 @@ def kwquery(query):
             else:
                 # print r.get_text()
                 # print "百度万年历找到答案"
-                answer.append(r.get_text().strip().replace("\n","").replace(" ",""))
-                flag = 1
-                break
+                r=r.get_text().strip().replace("\n","").replace(" ","")
+                if r != "":
+                    answer.append(r)
+                    flag = 1
+                    break
 
         if results.attrs.has_key('tpl') and i == 1 and results.attrs['tpl'].__contains__('calendar_new'):
             # r = results.attrs['fk'].replace("6018_","")
@@ -132,9 +138,11 @@ def kwquery(query):
             else:
                 # print r.get_text()
                 # print "计算器找到答案"
-                answer.append(r.get_text().strip())
-                flag = 1
-                break
+                r=r.get_text().strip()
+                if r != "":
+                    answer.append(r)
+                    flag = 1
+                    break
 
 
         # 百度知道答案
@@ -187,9 +195,11 @@ def kwquery(query):
                     r=r.find('pre')
                     if r == None:
                         continue
-                    answer.append(r.get_text().strip())
-                    flag = 1
-                    break
+                    r=r.get_text().strip()
+                    if r != "":
+                        answer.append(r)
+                        flag = 1
+                        break
 
             # 百度百科
             # if results.find("h3").find("a").get_text().__contains__(u"百度百科") and (i == 1 or i ==2 or i==3):
@@ -207,67 +217,68 @@ def kwquery(query):
                         continue
                     else:
                         r = r.get_text().replace("\n","").strip()
-                    answer.append(r)
-                    flag = 1
-                    break
+                        if r != "":
+                            answer.append(r)
+                            flag = 1
+                            break
         text += results.get_text()
 
     if flag == 1:
         return answer
 
-    #获取bing的摘要
-    soup_bing = To.get_html_bing('https://www.bing.com/search?q='+quote(query),req)
-    # 判断是否在Bing的知识图谱中
-    # bingbaike = soup_bing.find(class_="b_xlText b_emphText")
-    bingbaike = soup_bing.find(class_="bm_box")
-
-    if bingbaike != None:
-        if bingbaike.find_all(class_="b_vList")[1] != None:
-            if bingbaike.find_all(class_="b_vList")[1].find("li") != None:
-                # print "Bing知识图谱找到答案"
-                flag = 1
-                answer.append(bingbaike.get_text())
-                # print "====="
-                # print answer
-                # print "====="
-                return answer
-    else:
-        # print "Bing知识图谱找不到答案"
-        results = soup_bing.find(id="b_results")
-        bing_list = results.find_all('li')
-        for bl in bing_list:
-            temp =  bl.get_text()
-            if temp.__contains__(u" - 必应网典"):
-                # print "查找Bing网典"
-                url = bl.find("h2")
-                if url == None:
-                    # print "Bing网典找不到答案"
-                    continue
-                url=url.find("a")
-                if url == None:
-                    # print "Bing网典找不到答案"
-                    continue
-                else:
-                    # print "Bing网典找到答案"
-                    url=url['href']
-                    bingwd_soup = To.get_html_bingwd(url,req)
-
-                    r = bingwd_soup.find(class_='bk_card_desc')
-                    if r == None:
-                        continue
-                    r=r.find("p")
-                    if r == None:
-                        continue
-                    else:
-                        r = r.get_text().replace("\n","").strip()
-                    answer.append(r)
-                    flag = 1
-                    break
-
-        if flag == 1:
-            return answer
-
-        text += results.get_text()
+    # #获取bing的摘要
+    # soup_bing = To.get_html_bing('https://www.bing.com/search?q='+quote(query),req)
+    # # 判断是否在Bing的知识图谱中
+    # # bingbaike = soup_bing.find(class_="b_xlText b_emphText")
+    # bingbaike = soup_bing.find(class_="bm_box")
+    #
+    # if bingbaike != None:
+    #     if bingbaike.find_all(class_="b_vList")[1] != None:
+    #         if bingbaike.find_all(class_="b_vList")[1].find("li") != None:
+    #             # print "Bing知识图谱找到答案"
+    #             flag = 1
+    #             answer.append(bingbaike.get_text())
+    #             # print "====="
+    #             # print answer
+    #             # print "====="
+    #             return answer
+    # else:
+    #     # print "Bing知识图谱找不到答案"
+    #     results = soup_bing.find(id="b_results")
+    #     bing_list = results.find_all('li')
+    #     for bl in bing_list:
+    #         temp =  bl.get_text()
+    #         if temp.__contains__(u" - 必应网典"):
+    #             # print "查找Bing网典"
+    #             url = bl.find("h2")
+    #             if url == None:
+    #                 # print "Bing网典找不到答案"
+    #                 continue
+    #             url=url.find("a")
+    #             if url == None:
+    #                 # print "Bing网典找不到答案"
+    #                 continue
+    #             else:
+    #                 # print "Bing网典找到答案"
+    #                 url=url['href']
+    #                 bingwd_soup = To.get_html_bingwd(url,req)
+    #
+    #                 r = bingwd_soup.find(class_='bk_card_desc')
+    #                 if r == None:
+    #                     continue
+    #                 r=r.find("p")
+    #                 if r == None:
+    #                     continue
+    #                 else:
+    #                     r = r.get_text().replace("\n","").strip()
+    #                 answer.append(r)
+    #                 flag = 1
+    #                 break
+    #
+    #     if flag == 1:
+    #         return answer
+    #
+    #     text += results.get_text()
 
     # print text
 
