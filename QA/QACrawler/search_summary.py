@@ -49,13 +49,13 @@ def kwquery(query):
         results = soup_baidu.find(id=i)
         if results == None:
             # print "百度摘要找不到答案"
-            break
+            continue
         # print '============='
         # print results.attrs
         # print type(results.attrs)
         # print results['class']
         #判断是否有mu,如果第一个是百度知识图谱的 就直接命中答案
-        if results.attrs.has_key('mu') and i == 1:
+        if results.attrs.has_key('mu')and i == 1:
             # print results.attrs["mu"]
             r = results.find(class_='op_exactqa_s_answer')
             if r == None:
@@ -101,7 +101,14 @@ def kwquery(query):
 
         if results.attrs.has_key('tpl') and i == 1 and results.attrs['tpl'].__contains__('calendar_new'):
             # r = results.attrs['fk'].replace("6018_","")
-            r=results.find(class_="op-calendar-new-right-date")
+            if results.find(attrs={"data-compress":"off"}):
+                r = results.find(attrs={"data-compress":"off"}).get_text()
+                r=r[r.find('selectDate'):]
+                r=r[r.find('[')+1:r.find(']')]
+                r=r.replace("\"", "")
+                r = r.split(',')
+
+            #r=results.find(class_="op-calendar-new-right-date")
             # print r
             if r == None:
                 pass# print "百度万年历新版找不到答案"
@@ -109,6 +116,7 @@ def kwquery(query):
             else:
                 # print r.get_text()
                 # print "百度万年历新版找到答案"
+                r=r[0]+"年"+r[1]+"月"+r[2]+"日"
                 answer.append(r)
                 flag = 1
                 break
@@ -180,7 +188,7 @@ def kwquery(query):
 
         if results.find("h3") != None:
             # 百度知道
-            if results.find("h3").find("a").get_text().__contains__(u"百度知道") and (i <=3):
+            if results.find("h3").find("a").get_text().__contains__(u"百度知道") and (i <=5):
                 url = results.find("h3").find("a")['href']
                 if url == None:
                     # print "百度知道找不到答案"
@@ -284,7 +292,15 @@ def kwquery(query):
 
     # 如果再两家搜索引擎的知识图谱中都没找到答案，那么就不知道
     if flag==0:
-        answer.append(u"很抱歉，这个我也母鸡啊！")
+        results = soup_baidu.find(id=1)
+        if(results==None):
+            answer.append(u"很抱歉，这个我也母鸡啊！")
+        else:
+            r=results.find(class_="c-abstract")
+            [s.extract() for s in r(['span'])]
+            answer.append(r.get_text())
+
+
 
     # # 如果再两家搜索引擎的知识图谱中都没找到答案，那么就分析摘要
     # if flag == 0:

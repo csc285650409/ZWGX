@@ -54,7 +54,8 @@ def get_html_baidu(url,req):
     soup = BeautifulSoup(req.session.get(url=url, headers=req.headers).content, "lxml")
 
     # 去除无关的标签
-    [s.extract() for s in soup(['script', 'style','img'])]
+    # [s.extract() for s in soup(['script', 'style','img'])]
+    [s.extract() for s in soup(['style', 'img'])]
     # print(soup.prettify())
     return soup
 

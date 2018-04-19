@@ -79,6 +79,7 @@ def QA(input_message,mybot):
                         if len(results)>0:
                             for row in results:
                                 ansdict[row[0]]=row[1]
+                                #print row[0],row[1]
                                 # reply +=row[0].encode("utf8")
                                 # reply+=" ".encode("utf8")
                             # shuxing=raw_input('Frank：你想了解什么属性 ' + reply+">>")
@@ -177,18 +178,20 @@ if __name__ == '__main__':
         # if(reply!=''):
         #     conn.send(reply)
         #     reply=''
+        try:
+            conn,addr = sock.accept()
+            data = conn.recv(4096)
+            input_message = data
 
-        conn,addr = sock.accept()
-        data = conn.recv(4096)
-        input_message = data
+            print "input_message====="
+            print input_message
+            print "=========="
 
-        print "input_message====="
-        print input_message
-        print "=========="
-
-        reply=QA(input_message,mybot)
-        # print reply
-        conn.send(reply)
+            reply=QA(input_message,mybot)
+            # print reply
+            conn.send(reply)
+        except Exception as ex:
+            print ex
 
 
 
