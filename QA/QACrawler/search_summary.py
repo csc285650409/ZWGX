@@ -2,10 +2,16 @@
 
 import time
 from urllib import quote
-
+from aip import AipNlp
 from QA.Tools import Html_Tools as To
 from QA.Tools import TextProcess as T
 # import pynlpir
+
+APP_ID = '11437411'
+API_KEY = '2B6dy6KWVZhwd8cHdjd4Rp6B'
+SECRET_KEY = 'qYu83SEnfzpwiFe0L9gmu2etpIneYBuA '
+
+client = AipNlp(APP_ID, API_KEY, SECRET_KEY)
 
 '''
 对百度、Bing 的搜索摘要进行答案的检索
@@ -382,9 +388,12 @@ def kwquery(query):
 
 if __name__ == '__main__':
     pass
-    query = "北大"
-    ans = kwquery(query)
+    query1 = "北大在哪里"
+    query2 = "上海交大的具体位置？"
+    ans = kwquery(query1)
     print "~~~~~~~"
     for a in ans:
         print a
     print "~~~~~~~"
+    # ans = client.simnet(query1,query2)
+    # print ans.get("score")
