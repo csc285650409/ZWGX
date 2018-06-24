@@ -15,6 +15,7 @@ from QA.Tools import TextProcess as T
 from QA.QACrawler import search_summary
 from socket import socket, AF_INET, SOCK_STREAM
 
+
 def initQA(mybot):
     # 初始化jb分词器
     T.jieba_initialize()
@@ -66,7 +67,7 @@ def QA(input_message,mybot):
             for w in words:
                 print w.word, w.flag
 
-                # 配对数据库中已存内容
+                # 识别学校简称并配对数据库中已存内容
                 if w.flag == 'x' or w.flag == 'nt':
                     try:
                         db = pymysql.connect(host=dbip, user=dbusername, passwd=dbpassword, db=dbname, charset="utf8")
@@ -105,36 +106,36 @@ def QA(input_message,mybot):
                 reply = mybot.respond('找不到答案')
                 findAns = True
                 print 'Frank：' + reply
-
+# *********************************************************************************
             # 百科搜索
             elif response[0] == '#':
                 # 匹配百科
-                if response.__contains__("searchbaike"):
-                    print "searchbaike"
-                    print response
-                    res = response.split(':')
-                    # 实体
-                    entity = str(res[1]).replace(" ", "")
-                    # 属性
-                    attr = str(res[2]).replace(" ", "")
-                    print entity + '<---->' + attr
-
-                    ans = baike.query(entity, attr)
-                    # 如果命中答案
-                    if type(ans) == list:
-                        print 'Frank：' + QAT.ptranswer(ans, False)
-                        reply = QAT.ptranswer(ans, False)
-                        findAns = True
-                    elif ans.decode('utf-8').__contains__(u'::找不到'):
-                        # 百度摘要+Bing摘要
-                        print "通用搜索"
-                        ans = search_summary.kwquery(input_message)
-
-                # 匹配不到模版，通用查询
-                elif response.__contains__("NoMatchingTemplate"):
-                    print "NoMatchingTemplate"
-                    ans = search_summary.kwquery(input_message)
-
+                # if response.__contains__("searchbaike"):
+                #     print "searchbaike"
+                #     print response
+                #     res = response.split(':')
+                #     # 实体
+                #     entity = str(res[1]).replace(" ", "")
+                #     # 属性
+                #     attr = str(res[2]).replace(" ", "")
+                #     print entity + '<---->' + attr
+                #
+                #     ans = baike.query(entity, attr)
+                #     # 如果命中答案
+                #     if type(ans) == list:
+                #         print 'Frank：' + QAT.ptranswer(ans, False)
+                #         reply = QAT.ptranswer(ans, False)
+                #         findAns = True
+                #     elif ans.decode('utf-8').__contains__(u'::找不到'):
+                #         # 百度摘要+Bing摘要
+                #         print "通用搜索"
+                #         ans = search_summary.kwquery(input_message)
+                #
+                # # 匹配不到模版，通用查询
+                # elif response.__contains__("NoMatchingTemplate"):
+                print "NoMatchingTemplate"
+                ans = search_summary.kwquery(input_message)
+#*********************************************************************************
                 if (findAns == False):
                     if len(ans) == 0:
                         ans = mybot.respond('找不到答案')

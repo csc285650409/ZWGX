@@ -9,6 +9,7 @@ from QACrawler import search_summary
 import server
 
 
+
 if(__name__=='__main__'):
     mybot = aiml.Kernel()
     server.initQA(mybot)

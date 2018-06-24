@@ -388,7 +388,7 @@ def kwquery(query):
 
 if __name__ == '__main__':
     pass
-    query1 = "北大在哪里"
+    query1 = "北大在哪里？"
     query2 = "上海交大的具体位置？"
     ans = kwquery(query1)
     print "~~~~~~~"
