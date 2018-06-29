@@ -8,7 +8,7 @@ import json
 
 
 reload(sys)
-sys.setdefaultencoding('utf-8')
+sys.setdefaultencoding('utf8')
 from QA.QACrawler import baike
 from QA.Tools import Html_Tools as QAT
 from QA.Tools import TextProcess as T
@@ -43,10 +43,10 @@ def QA(input_message,mybot):
     reply=''
     ansdict={}
     dbname='zwgx' #数据库名
-    dbip='examonline.mysql.rds.aliyuncs.com'#数据库IPlocalhost
+    dbip='106.14.124.221'#数据库IPlocalhost
     dbport=3306#数据库端口
     dbusername='root'#数据库用户名
-    dbpassword='ExamOnline1'#数据库密码root
+    dbpassword='zwgx'#数据库密码root
     if len(input_message) > 60:
         reply = mybot.respond("句子长度过长")
         findAns = True
@@ -69,8 +69,8 @@ def QA(input_message,mybot):
 
                 # 识别学校简称并配对数据库中已存内容
                 if w.flag == 'x' or w.flag == 'nt':
-                    try:
-                        db = pymysql.connect(host=dbip, user=dbusername, passwd=dbpassword, db=dbname, charset="utf8")
+                    # try:
+                        db = pymysql.connect(host=dbip, user=dbusername, passwd=dbpassword, db=dbname,charset="utf8")
                         cursor = db.cursor()
                         sql=u"SELECT `属性`,`内容` FROM school WHERE `学校`='"+w.word+"'"
                         # 执行SQL语句
@@ -93,8 +93,8 @@ def QA(input_message,mybot):
                             #     return reply
                             # 关闭数据库连接
                             db.close()
-                    except Exception as e:
-                        print(e)
+                    # except Exception as e:
+                    #     print(e)
 
             response = mybot.respond(input_message.strip())
 
@@ -133,7 +133,7 @@ def QA(input_message,mybot):
                 #
                 # # 匹配不到模版，通用查询
                 # elif response.__contains__("NoMatchingTemplate"):
-                print "NoMatchingTemplate"
+                #     print "NoMatchingTemplate"
                 ans = search_summary.kwquery(input_message)
 #*********************************************************************************
                 if (findAns == False):

@@ -49,22 +49,13 @@ def kwquery(query):
     # 抓取百度前10条的摘要
     soup_baidu = To.get_html_baidu('https://www.baidu.com/s?wd='+quote(query),req)
     #判断是否有两个id为1的页面
-    if(soup_baidu.find_all(id = 1).__len__() > 1):
-        results = soup_baidu.find_all(id = 1)[1]
-        url = results.find("h3").find("a")['href']
-        if url != None:
-            baike_soup = To.get_html_baike(url, req)
-            r = baike_soup.find(class_ = 'lemma-summary')
-            if r != None:
-                r = r.get_text().replace("\n", "").strip()
-                if r != "":
-                    answer.append(r)
-                    flag = 1
-    else:
-        for i in range(1, 10):
-            if soup_baidu == None:
-                break
-            results = soup_baidu.find(id = i)
+    for i in range(1, 10):
+        if soup_baidu == None:
+            break
+        resultsS = soup_baidu.find_all(id = i)
+        if flag==1:
+            break
+        for results in resultsS:
             if results == None:
                 # print "百度摘要找不到答案"
                 continue
@@ -75,6 +66,18 @@ def kwquery(query):
                 # 判断是否有mu,如果第一个是百度知识图谱的 就直接命中答案
             if results.attrs.has_key('mu') and i == 1:
                 # print results.attrs["mu"]
+                r = results.find_all(class_='op_best_answer_content')[1]
+                if r == None:
+                    pass  # print "百度知识图谱找不到答案"
+                else:
+                    # print r.get_text()
+                    # print "百度知识图谱找到答案"
+                    r = r.get_text().strip()
+                    if r != "":
+                        answer.append(r)
+                        flag = 1
+                        break
+
                 r = results.find(class_ = 'op_exactqa_s_answer')
                 if r == None:
                     pass  # print "百度知识图谱找不到答案"
@@ -86,6 +89,8 @@ def kwquery(query):
                         answer.append(r)
                         flag = 1
                         break
+
+
 
             # 百度百科
             # if results.find("h3").find("a").get_text().__contains__(u"百度百科") and (i == 1 or i ==2 or i==3):

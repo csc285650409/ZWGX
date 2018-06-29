@@ -3,7 +3,7 @@
 import os
 import jieba
 import jieba.posseg as pseg
-
+import fenci
 
 '''
 initialize jieba Segment
