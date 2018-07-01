@@ -295,7 +295,7 @@ def kwquery(query):
         results = soup_baidu.find(id=1)
         if(results==None):
             answer.append(u"很抱歉，这个我也母鸡啊！")
-        else:
+        else:#提取摘要
             r=results.find(class_="c-abstract")
             [s.extract() for s in r(['span'])]
             answer.append(r.get_text())
