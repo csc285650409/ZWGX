@@ -66,12 +66,13 @@ def kwquery(query):
                 # 判断是否有mu,如果第一个是百度知识图谱的 就直接命中答案
             if results.attrs.has_key('mu') and i == 1:
                 # print results.attrs["mu"]
-                r = results.find_all(class_='op_best_answer_content')[1]
-                if r == None:
+                r = results.find_all(class_='op_best_answer_content')
+                if r == None or len(r)<2:
                     pass  # print "百度知识图谱找不到答案"
                 else:
                     # print r.get_text()
                     # print "百度知识图谱找到答案"
+                    r=r[1]
                     r = r.get_text().strip()
                     if r != "":
                         answer.append(r)
@@ -94,24 +95,25 @@ def kwquery(query):
 
             # 百度百科
             # if results.find("h3").find("a").get_text().__contains__(u"百度百科") and (i == 1 or i ==2 or i==3):
-            if results.find("h3").find("a").get_text().__contains__(u"_百度百科"):
-                url = results.find("h3").find("a")['href']
-                if url == None:
-                    # print "百度百科找不到答案"
-                    continue
-                else:
-                    # print "百度百科找到答案"
-                    baike_soup = To.get_html_baike(url, req)
-
-                    r = baike_soup.find(class_ = 'lemma-summary')
-                    if r == None:
+            if results.find("h3")!=None:
+                if results.find("h3").find("a").get_text().__contains__(u"_百度百科"):
+                    url = results.find("h3").find("a")['href']
+                    if url == None:
+                        # print "百度百科找不到答案"
                         continue
                     else:
-                        r = r.get_text().replace("\n", "").strip()
-                        if r != "":
-                            answer.append(r)
-                            flag = 1
-                            break
+                        # print "百度百科找到答案"
+                        baike_soup = To.get_html_baike(url, req)
+
+                        r = baike_soup.find(class_ = 'lemma-summary')
+                        if r == None:
+                            continue
+                        else:
+                            r = r.get_text().replace("\n", "").strip()
+                            if r != "":
+                                answer.append(r)
+                                flag = 1
+                                break
 
             # 古诗词判断
             if results.attrs.has_key('mu') and i == 1:
