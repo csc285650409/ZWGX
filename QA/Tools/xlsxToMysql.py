@@ -7,10 +7,10 @@ def ExceltoMySQL(excelpath,dbname,):
 
     # 打开数据库连接
     dbname = 'zwgx'  # 数据库名
-    dbip = 'examonline.mysql.rds.aliyuncs.com'  # 数据库IPlocalhost
+    dbip = '106.14.124.221'  # 数据库IPlocalhost
     dbport = 3306  # 数据库端口
     dbusername = 'root'  # 数据库用户名
-    dbpassword = 'ExamOnline1'  # 数据库密码root
+    dbpassword = 'zwgx'  # 数据库密码root
     try:
         # db = pymysql.connect("localhost", "root", "root", dbname,charset="utf8")
         db = pymysql.connect(host=dbip, user=dbusername, passwd=dbpassword, db=dbname, charset="utf8")
@@ -96,7 +96,8 @@ def ExceltoMySQL(excelpath,dbname,):
 # ExceltoMySQL(dbname=dbname,excelpath=excelpath)
 if(__name__=='__main__'):
     # excelpath = input("输入文件地址")
-    excelpath = r"E:\文档\计算机应用能力大赛\高校数据\school.xlsx"
-    dbname=input("输入数据库名")
+    excelpath = r"C:\Users\Administrator\Desktop\allschool.xlsx"
+    # dbname=input("输入数据库名")
+    dbname='zwgx'
     ExceltoMySQL(dbname=dbname,excelpath=excelpath)
 

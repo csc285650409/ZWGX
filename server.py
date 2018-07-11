@@ -38,6 +38,16 @@ def initQA(mybot):
     Frank：你好，我是Frank o(*≧▽≦)ツ
     '''
 
+def FindSchool(dbip,dbusername,dbpassword,dbname,word):
+    db = pymysql.connect(host=dbip, user=dbusername, passwd=dbpassword, db=dbname, charset="utf8")
+    cursor = db.cursor()
+    sql = u"SELECT `学校名称` FROM allschool WHERE `学校名称`='" + word + "'"
+    cursor.execute(sql)
+    # 获取所有记录列表
+    results = cursor.fetchall()
+    if len(results) > 0:
+        print(word)
+
 def QA(input_message,mybot):
     findAns = False
     reply=''
@@ -166,7 +176,6 @@ def QA(input_message,mybot):
     return json_s
 
 if __name__ == '__main__':
-
     mybot = aiml.Kernel()
     initQA(mybot)
 
