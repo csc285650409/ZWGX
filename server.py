@@ -79,7 +79,7 @@ def QA(input_message,mybot):
 
                 # 识别学校简称并配对数据库中已存内容
                 if w.flag == 'x' or w.flag == 'nt':
-                    # try:
+                    try:
                         db = pymysql.connect(host=dbip, user=dbusername, passwd=dbpassword, db=dbname,charset="utf8")
                         cursor = db.cursor()
                         sql=u"SELECT `属性`,`内容` FROM school WHERE `学校`='"+w.word+"'"
@@ -101,11 +101,26 @@ def QA(input_message,mybot):
                             #     print "Frank： "+results[0][0].encode("utf8")
                             #     reply=results[0][0].encode("utf8")
                             #     return reply
-                            # 关闭数据库连接
-                            db.close()
-                    # except Exception as e:
-                    #     print(e)
-
+                        # 关闭数据库连接
+                        db.close()
+                    except Exception as e:
+                        print(e)
+                if w.flag=='school':
+                    try:
+                        db = pymysql.connect(host=dbip, user=dbusername, passwd=dbpassword, db=dbname, charset="utf8")
+                        cursor = db.cursor()
+                        sql = u"SELECT `学校名` FROM 学校简称 WHERE `简称`='" + w.word + "'"
+                        # 执行SQL语句
+                        cursor.execute(sql)
+                        # 获取所有记录列表
+                        results = cursor.fetchall()
+                        #替换简称
+                        if len(results) > 0:
+                            input_message=input_message.replace(w.word,results[0][0]).__str__()
+                        # 关闭数据库连接
+                        db.close()
+                    except Exception as e:
+                        print(e)
             response = mybot.respond(input_message.strip())
 
             print "======="

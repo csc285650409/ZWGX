@@ -245,10 +245,12 @@ def kwquery(query):
                         r = zhidao_soup.find(class_ = 'bd answer')
                         if r == None:
                             continue
-                        r = r.find('pre')
-
+                        r = r.find(class_='best-text mb-10')
                         if r == None:
                             continue
+                        ex=r.find(class_='wgt-best-mask')
+                        if ex!=None:
+                            ex.extract()
                         r = r.get_text().strip()
                         if r != "":
                             answer.append(r)
@@ -260,13 +262,18 @@ def kwquery(query):
     if flag == 1:
         return answer
     else:
-        results = soup_baidu.find(id = 1)
-        if(results == None):
-            answer.append(u"很抱歉，这个我也母鸡啊！")
-        else:
+        for i in range(1,10):
+            results = soup_baidu.find(id = i)
+            # if(results == None):
+            #     answer.append(u"很抱歉，这个我也母鸡啊！")
+            # else:
             r = results.find(class_ = "c-abstract")
-            [s.extract() for s in r(['span'])]
-            answer.append(r.get_text())
+            if r==None:
+                continue
+            else:
+                [s.extract() for s in r(['span'])]
+                answer.append(r.get_text())
+                break
     del req
     return answer
     # #获取bing的摘要

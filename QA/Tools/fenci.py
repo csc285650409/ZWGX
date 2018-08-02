@@ -1,6 +1,7 @@
 ﻿# -*- encoding: utf-8 -*-
 # 第一行的编码申明方式更有效
 import jieba
+jieba.add_word("上大",tag='school',freq=20000)
 jieba.add_word("北京大学")
 jieba.add_word("中国人民大学")
 jieba.add_word("清华大学")
