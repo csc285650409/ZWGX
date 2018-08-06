@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="d0287a7f-a81e-481f-a6e2-4176ef133cd2" name="默认的" comment=" 爬虫快更改完毕">
+    <list default="true" id="bff7a8fd-01b8-4fed-9005-4d46bdff15bb" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.gitignore.txt" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/server.py" afterPath="$PROJECT_DIR$/server.py" />
-=======
-    <list default="true" id="d0287a7f-a81e-481f-a6e2-4176ef133cd2" name="默认的" comment="2018/8/2&#10;添加学校简称替换功能&#10;更新百度知道爬取">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/QA/Tools/fenci.py" afterPath="$PROJECT_DIR$/QA/Tools/fenci.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/QA/Tools/xlsxToMysql.py" afterPath="$PROJECT_DIR$/QA/Tools/xlsxToMysql.py" />
->>>>>>> origin/master
     </list>
+    <ignored path="$PROJECT_DIR$/venv/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,134 +13,10 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/QA_Snake$server__1_.coverage" NAME="server (1) Coverage Results" MODIFIED="1514718111443" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ZWGX$NLPIR.coverage" NAME="NLPIR Coverage Results" MODIFIED="1518149851718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QA" />
-    <SUITE FILE_PATH="coverage/QA_Snake$qa.coverage" NAME="qa Coverage Results" MODIFIED="1512652019015" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QA" />
-    <SUITE FILE_PATH="coverage/QA_Snake$search_summary.coverage" NAME="search_summary Coverage Results" MODIFIED="1514397629331" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QA/QACrawler" />
-    <SUITE FILE_PATH="coverage/QA_Snake$server.coverage" NAME="server Coverage Results" MODIFIED="1514355372219" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QA" />
-<<<<<<< HEAD
-    <SUITE FILE_PATH="coverage/ZWGX$MainProgram.coverage" NAME="MainProgram Coverage Results" MODIFIED="1528172091601" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QA" />
-    <SUITE FILE_PATH="coverage/ZWGX$search_summary.coverage" NAME="search_summary Coverage Results" MODIFIED="1533536532280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QA/QACrawler" />
-=======
-    <SUITE FILE_PATH="coverage/QA_Snake$MainProgram.coverage" NAME="MainProgram Coverage Results" MODIFIED="1514716824919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QA" />
-    <SUITE FILE_PATH="coverage/QA_Snake$server__1_.coverage" NAME="server (1) Coverage Results" MODIFIED="1514718111443" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ZWGX$qa.coverage" NAME="qa Coverage Results" MODIFIED="1533552571535" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QA" />
-    <SUITE FILE_PATH="coverage/ZWGX$MainProgram.coverage" NAME="MainProgram Coverage Results" MODIFIED="1528172091601" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QA" />
-    <SUITE FILE_PATH="coverage/ZWGX$xlsxToMysql.coverage" NAME="xlsxToMysql Coverage Results" MODIFIED="1533552519493" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QA/Tools" />
->>>>>>> origin/master
-    <SUITE FILE_PATH="coverage/ZWGX$server.coverage" NAME="server Coverage Results" MODIFIED="1533133036230" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ZWGX$xlsxToMysql.coverage" NAME="xlsxToMysql Coverage Results" MODIFIED="1531310176723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QA/Tools" />
-    <SUITE FILE_PATH="coverage/ZWGX$qa.coverage" NAME="qa Coverage Results" MODIFIED="1533551948501" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QA" />
-    <SUITE FILE_PATH="coverage/ZWGX$test.coverage" NAME="test Coverage Results" MODIFIED="1533527424179" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QA" />
-    <SUITE FILE_PATH="coverage/QA_Snake$MainProgram.coverage" NAME="MainProgram Coverage Results" MODIFIED="1514716824919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QA" />
-    <SUITE FILE_PATH="coverage/ZWGX$setup_1_.coverage" NAME="setup(1) Coverage Results" MODIFIED="1529830109336" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Html_Tools.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/QA/Tools/Html_Tools.py">
-          <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="115">
-              <caret line="56" column="60" lean-forward="false" selection-start-line="56" selection-start-column="60" selection-end-line="56" selection-end-column="60" />
-=======
-            <state relative-caret-position="2166">
-              <caret line="118" column="0" lean-forward="false" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
->>>>>>> origin/master
-              <folding>
-                <element signature="e#42#71#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="search_summary.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/QA/QACrawler/search_summary.py">
-          <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="243">
-              <caret line="336" column="13" lean-forward="false" selection-start-line="336" selection-start-column="13" selection-end-line="336" selection-end-column="13" />
-=======
-            <state relative-caret-position="4655">
-              <caret line="249" column="36" lean-forward="false" selection-start-line="249" selection-start-column="36" selection-end-line="249" selection-end-column="36" />
->>>>>>> origin/master
-              <folding>
-                <element signature="e#14#25#0" expanded="true" />
-                <element signature="e#399#999#0" expanded="false" />
-                <element signature="e#1038#1474#0" expanded="false" />
-                <element signature="e#1514#1967#0" expanded="false" />
-                <element signature="e#2005#2201#0" expanded="false" />
-                <element signature="e#2243#2844#0" expanded="false" />
-                <element signature="e#2885#3377#0" expanded="false" />
-                <element signature="e#3414#3781#0" expanded="false" />
-                <element signature="e#3816#4183#0" expanded="false" />
-                <element signature="e#4230#4518#0" expanded="false" />
-                <element signature="e#4562#4941#0" expanded="false" />
-                <element signature="e#4978#5521#0" expanded="false" />
-                <element signature="e#5559#6004#0" expanded="false" />
-                <element signature="e#6039#6288#0" expanded="false" />
-                <element signature="e#6326#6539#0" expanded="false" />
-                <element signature="e#6575#6813#0" expanded="false" />
-                <element signature="e#6850#7229#0" expanded="false" />
-                <element signature="e#7267#7646#0" expanded="false" />
-                <element signature="e#7689#8068#0" expanded="false" />
-                <element signature="e#8110#8490#0" expanded="false" />
-                <element signature="e#8537#8917#0" expanded="false" />
-                <element signature="e#8957#9337#0" expanded="false" />
-                <element signature="e#9374#9917#0" expanded="false" />
-                <element signature="e#10007#10013#0" expanded="false" />
-                <element signature="e#14653#15097#0" expanded="false" />
-                <element signature="e#16855#17375#0" expanded="false" />
-                <element signature="e#20372#20384#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-<<<<<<< HEAD
-      <file leaf-file-name="server.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/server.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="170" column="48" lean-forward="false" selection-start-line="170" selection-start-column="48" selection-end-line="170" selection-end-column="48" />
-              <folding>
-                <marker date="1533552150555" expanded="true" signature="1404:1460" ph="SELECT `学校名称... allschool" />
-                <marker date="1533552150555" expanded="true" signature="2675:2725" ph="SELECT `学校名`... 学校简称" />
-                <marker date="1533552150555" expanded="true" signature="3607:3659" ph="SELECT `属性`,... school" />
-=======
-      <file leaf-file-name="fenci.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/QA/Tools/fenci.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="44" lean-forward="true" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/QA/test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="34" lean-forward="false" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Html_Tools.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/QA/Tools/Html_Tools.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="qa.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/QA/qa.py">
+    <leaf>
+      <file leaf-file-name=".gitignore.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -155,121 +25,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="xlsxToMysql.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/QA/Tools/xlsxToMysql.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1493">
-              <caret line="92" column="0" lean-forward="true" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
-              <folding>
-                <element signature="e#29#44#0" expanded="true" />
-                <marker date="1533552519446" expanded="true" signature="814:925" ph="SELECT COUNT... TABLES" />
->>>>>>> origin/master
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Python Script" />
-      </list>
-    </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>s</find>
-      <find>u60c5\u51b5</find>
-      <find>\u4e0a\u6d77\u6d77\u4e8b\</find>
-      <find>ltptools</find>
-      <find>print</find>
-      <find>找</find>
-      <find>背景</find>
-      <find>背</find>
-      <find>北京</find>
-      <find>北京大学</find>
-      <find>大学</find>
-      <find>replace(&quot;\n&quot;,&quot;&quot;)</find>
-      <find>.strip()</find>
-      <find>get_html_zhidao</find>
-      <find>query</find>
-      <find>kwquery</find>
-      <find>searchbaike</find>
-      <find>fr_path</find>
-      <find>jieba_initialize</find>
-      <find>wordSegment</find>
-      <find>postag</find>
-      <find>xiaohuangji_textprocess</find>
-      <find>tp2</find>
-      <find>load_baikeattr_name</find>
-      <find>load_synonyms_word_inattr</find>
-      <find>清华大学</find>
-      <find>ch-table</find>
-      <find>get_html_baidu_soup</find>
-      <find>get_html_baidu</find>
-      <find>try</find>
-    </findStrings>
-    <replaceStrings>
-      <replace />
-    </replaceStrings>
-    <dirStrings>
-      <dir>E:\文档\计算机应用能力大赛\QA-Snake-master</dir>
-      <dir>E:\学习\计算机应用能力大赛\ZWGX</dir>
-      <dir>E:\文档\计算机应用能力大赛\ZWGX</dir>
-      <dir>E:\文档\计算机应用能力大赛\ZWGX\QA\resources</dir>
-    </dirStrings>
-  </component>
   <component name="Git.Settings">
-    <option name="PREVIOUS_COMMIT_AUTHORS">
-      <list>
-        <option value="Linx" />
-      </list>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="NLPIR" />
-      </map>
-    </option>
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/QA/server.py" />
-        <option value="$PROJECT_DIR$/QA/resources/std-startup.xml" />
-        <option value="$PROJECT_DIR$/QA/resources/Common conversation.aiml" />
-        <option value="$PROJECT_DIR$/QA/resources/NLPIR词性分类表" />
-        <option value="$PROJECT_DIR$/QA/NLPIR.py" />
-        <option value="$PROJECT_DIR$/QA/Tools/DeepLearningProcess.py" />
-        <option value="$PROJECT_DIR$/corpus/questions/ques_dic.txt" />
-        <option value="$PROJECT_DIR$/QA/resources/专有名词.py" />
-        <option value="$PROJECT_DIR$/QA/resources/fenci.py" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/QA/resources/stopwords.txt" />
-        <option value="$PROJECT_DIR$/QA/MainProgram.py" />
-        <option value="$PROJECT_DIR$/setup.py" />
-        <option value="$PROJECT_DIR$/QA/resources/funny.aiml" />
-        <option value="$PROJECT_DIR$/QA/qa.py" />
-        <option value="E:/anaconda/envs/Linx_py2.7/Lib/site-packages/synonyms/synonyms.py" />
-        <option value="$PROJECT_DIR$/QA/Tools/TextProcess.py" />
-<<<<<<< HEAD
-        <option value="$PROJECT_DIR$/QA/Tools/xlsxToMysql.py" />
-        <option value="$PROJECT_DIR$/QA/Tools/fenci.py" />
-        <option value="$PROJECT_DIR$/QA/Tools/Html_Tools.py" />
-        <option value="$PROJECT_DIR$/QA/test.py" />
-        <option value="$PROJECT_DIR$/QA/QACrawler/search_summary.py" />
-        <option value="$PROJECT_DIR$/server.py" />
-=======
-        <option value="$PROJECT_DIR$/QA/test.py" />
-        <option value="$PROJECT_DIR$/server.py" />
-        <option value="$PROJECT_DIR$/QA/QACrawler/search_summary.py" />
-        <option value="$PROJECT_DIR$/QA/Tools/fenci.py" />
-        <option value="$PROJECT_DIR$/QA/Tools/xlsxToMysql.py" />
->>>>>>> origin/master
-      </list>
-    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -277,7 +36,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="960" />
     <option name="width" value="960" />
     <option name="height" value="1040" />
@@ -297,11 +56,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-<<<<<<< HEAD
-=======
       <pane id="Scope" />
->>>>>>> origin/master
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -309,37 +64,15 @@
               <item name="ZWGX" type="b2602c69:ProjectViewProjectNode" />
               <item name="ZWGX" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="ZWGX" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ZWGX" type="462c0819:PsiDirectoryNode" />
-              <item name="QA" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ZWGX" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ZWGX" type="462c0819:PsiDirectoryNode" />
-              <item name="QA" type="462c0819:PsiDirectoryNode" />
-              <item name="Tools" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-<<<<<<< HEAD
-      <pane id="Scope" />
-=======
->>>>>>> origin/master
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="SearchEverywhereHistoryKey" value="tp2&#9;null&#9;null&#10;synonyms&#9;null&#9;null&#10;initQA&#9;null&#9;null&#10;Kernel&#9;null&#9;null" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\ITEM\ZWGX\QA\Tools" />
-    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -353,268 +86,6 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.qa">
-    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="QA-Snake" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="TARGET" value="" />
-      <option name="SETTINGS_FILE" value="" />
-      <option name="CUSTOM_SETTINGS" value="false" />
-      <option name="USE_OPTIONS" value="false" />
-      <option name="OPTIONS" value="" />
-    </configuration>
-    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="QA-Snake" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="ADDITIONAL_ARGS" value="" />
-    </configuration>
-    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="QA-Snake" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="ADDITIONAL_ARGS" value="" />
-    </configuration>
-    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="QA-Snake" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="qa" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/QA" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ZWGX" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/QA/qa.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="search_summary" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/QA/QACrawler" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ZWGX" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/QA/QACrawler/search_summary.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="server" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ZWGX" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/server.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/QA" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ZWGX" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/QA/test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="xlsxToMysql" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/QA/Tools" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ZWGX" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/QA/Tools/xlsxToMysql.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration default="true" type="Tox" factoryName="Tox">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <module name="QA-Snake" />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
-      <node-interpreter value="project" />
-      <working-dir value="" />
-      <envs />
-      <scope-kind value="ALL" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
-      <config-file value="" />
-      <node-interpreter value="project" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run" />
-      <scripts />
-      <node-interpreter value="project" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Doctests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="QA-Snake" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-    </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Nosetests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="QA-Snake" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="_new_regexPattern" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;.&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-    </configuration>
-    <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.qa" />
-      <item index="1" class="java.lang.String" itemvalue="Python.test" />
-      <item index="2" class="java.lang.String" itemvalue="Python.search_summary" />
-      <item index="3" class="java.lang.String" itemvalue="Python.xlsxToMysql" />
-      <item index="4" class="java.lang.String" itemvalue="Python.server" />
-    </list>
-    <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.qa" />
-<<<<<<< HEAD
-        <item index="1" class="java.lang.String" itemvalue="Python.search_summary" />
-        <item index="2" class="java.lang.String" itemvalue="Python.test" />
-        <item index="3" class="java.lang.String" itemvalue="Python.server" />
-        <item index="4" class="java.lang.String" itemvalue="Python.xlsxToMysql" />
-=======
-        <item index="1" class="java.lang.String" itemvalue="Python.xlsxToMysql" />
-        <item index="2" class="java.lang.String" itemvalue="Python.server" />
-        <item index="3" class="java.lang.String" itemvalue="Python.test" />
-        <item index="4" class="java.lang.String" itemvalue="Python.search_summary" />
->>>>>>> origin/master
-      </list>
-    </recent_temporary>
-  </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
@@ -623,235 +94,38 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d0287a7f-a81e-481f-a6e2-4176ef133cd2" name="默认的" comment="" />
-      <created>1512651847086</created>
+      <changelist id="bff7a8fd-01b8-4fed-9005-4d46bdff15bb" name="Default" comment="" />
+      <created>1533558590710</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1512651847086</updated>
+      <updated>1533558590710</updated>
     </task>
-    <task id="LOCAL-00001" summary="解决无法回答时异常退出问题&amp;&amp;加入了全国2631所高校的名称分词">
-      <created>1519623924292</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1519623924292</updated>
-    </task>
-    <task id="LOCAL-00002" summary="解决无法回答时异常退出问题&amp;&amp;加入了全国2631所高校的名称分词">
-      <created>1520346392359</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1520346392359</updated>
-    </task>
-    <task id="LOCAL-00003" summary="2018/3/14&#10;修改session为实例属性">
-      <created>1521023612273</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1521023612273</updated>
-    </task>
-    <task id="LOCAL-00004" summary="2018/3/14&#10;去除返回3个最高词频">
-      <created>1521032517372</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1521032517372</updated>
-    </task>
-    <task id="LOCAL-00005" summary="2018/3/15&#10;加入预存数据库">
-      <created>1521091129464</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1521091129464</updated>
-    </task>
-    <task id="LOCAL-00006" summary="2018/3/18&#10;改为发送json字符串">
-      <created>1521382071913</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1521382071913</updated>
-    </task>
-    <task id="LOCAL-00007" summary="2018/3/19&#10;修复纯数字报错&#10;更新百度计算器">
-      <created>1521446392604</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1521446392604</updated>
-    </task>
-    <task id="LOCAL-00008" summary="2018/3/21&#10;去除pynlpir部分&#10;连接远程数据库">
-      <created>1521613593970</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1521613593970</updated>
-    </task>
-    <task id="LOCAL-00009" summary="2018/3/21&#10;去除提示信息 干净版">
-      <created>1521641724572</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1521641724572</updated>
-    </task>
-    <task id="LOCAL-00010" summary="2018/3/22&#10;去除AIML中有关大学的回答">
-      <created>1521698562399</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1521698562399</updated>
-    </task>
-    <task id="LOCAL-00011" summary="2018/3/22&#10;修复可能回答空字符串的问题">
-      <created>1521700209027</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1521700209027</updated>
-    </task>
-    <task id="LOCAL-00012" summary="修正了两个id=1的网页条目情况">
-      <created>1529815868143</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1529815868143</updated>
-    </task>
-    <task id="LOCAL-00013" summary="修正了爬虫部分">
-      <created>1529854922058</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1529854922058</updated>
-    </task>
-    <task id="LOCAL-00014" summary="默认的">
-      <created>1530424585601</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1530424585601</updated>
-    </task>
-    <task id="LOCAL-00015" summary="2018/7/31&#10;同步">
-      <created>1533044481956</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1533044481956</updated>
-    </task>
-<<<<<<< HEAD
-    <task id="LOCAL-00016" summary="完成意图分析">
-      <created>1533530229854</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1533530229854</updated>
-    </task>
-    <task id="LOCAL-00017" summary=" 爬虫快更改完毕">
-      <created>1533544403741</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1533544403741</updated>
-    </task>
-    <task id="LOCAL-00018" summary=" 爬虫快更改完毕">
-      <created>1533552061678</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1533552061678</updated>
-    </task>
-    <option name="localTasksCounter" value="19" />
-=======
-    <task id="LOCAL-00016" summary="2018/8/2&#10;添加学校简称替换功能&#10;更新百度知道爬取">
-      <created>1533222082559</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1533222082559</updated>
-    </task>
-    <option name="localTasksCounter" value="17" />
->>>>>>> origin/master
     <servers />
   </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="960" y="0" width="960" height="1040" extended-state="0" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15191898" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
-<<<<<<< HEAD
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32838982" sideWeight="0.5170576" order="13" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36585367" sideWeight="0.8307292" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.4978678" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20390455" sideWeight="0.47441363" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.4936034" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.103125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30646873" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3286334" sideWeight="0.48294243" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.335141" sideWeight="0.48294243" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-=======
-      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286334" sideWeight="0.48294243" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.335141" sideWeight="0.5191898" order="13" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.4978678" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20390455" sideWeight="0.47441363" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.4936034" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.335141" sideWeight="0.48081023" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
->>>>>>> origin/master
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-    </layout>
-    <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3286334" sideWeight="0.48294243" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32838982" sideWeight="0.5170576" order="13" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29798517" sideWeight="0.8307292" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.4978678" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20390455" sideWeight="0.47441363" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.4936034" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.335141" sideWeight="0.48294243" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15031315" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30752915" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-<<<<<<< HEAD
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
-=======
-      <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
     </layout>
->>>>>>> origin/master
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -859,225 +133,16 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="当问题无法解决时不会跳出，并加入了大学专有名词的分词。" />
-    <MESSAGE value="解决无法回答时异常退出问题&amp;&amp;加入了全国2631所高校的名称分词" />
-    <MESSAGE value="2018/3/14&#10;修改session为实例属性" />
-    <MESSAGE value="2018/3/14&#10;去除返回3个最高词频" />
-    <MESSAGE value="2018/3/15&#10;加入预存数据库" />
-    <MESSAGE value="2018/3/18&#10;改为发送json字符串" />
-    <MESSAGE value="2018/3/19&#10;修复纯数字报错&#10;更新百度计算器" />
-    <MESSAGE value="2018/3/21&#10;去除pynlpir部分&#10;连接远程数据库" />
-    <MESSAGE value="2018/3/21&#10;去除提示信息 干净版" />
-    <MESSAGE value="2018/3/22&#10;去除AIML中有关大学的回答" />
-    <MESSAGE value="2018/3/22&#10;修复可能回答空字符串的问题" />
-    <MESSAGE value="修正了两个id=1的网页条目情况" />
-    <MESSAGE value="修正了爬虫部分" />
-    <MESSAGE value="默认的" />
-    <MESSAGE value="2018/7/9&#10;修复抓取mu越界问题&#10;修复h3不存在问题" />
-    <MESSAGE value="2018/7/31&#10;同步" />
-<<<<<<< HEAD
-    <MESSAGE value="完成意图分析" />
-    <MESSAGE value=" 爬虫快更改完毕" />
-    <option name="LAST_COMMIT_MESSAGE" value=" 爬虫快更改完毕" />
-=======
-    <MESSAGE value="2018/8/2&#10;添加学校简称替换功能&#10;更新百度知道爬取" />
-    <option name="LAST_COMMIT_MESSAGE" value="2018/8/2&#10;添加学校简称替换功能&#10;更新百度知道爬取" />
->>>>>>> origin/master
-  </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="68" />
-    </breakpoint-manager>
+    <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/corpus/questions/shishenme.txt" />
-    <entry file="file://$PROJECT_DIR$/corpus/questions/shishei.txt" />
-    <entry file="file://$PROJECT_DIR$/QA/resources/专有名词.py" />
-    <entry file="file://$PROJECT_DIR$/QA/Tools/DeepLearningProcess.py" />
-    <entry file="file://$PROJECT_DIR$/corpus/questions/3760questions.txt" />
-    <entry file="file://$PROJECT_DIR$/corpus/baike_seeds.txt" />
-    <entry file="file://$PROJECT_DIR$/QA/NLPIR.py" />
-    <entry file="file://$PROJECT_DIR$/corpus/questions/ques_dic.txt" />
-    <entry file="file://$PROJECT_DIR$/corpus/xiaohuangji50w_clean.txt" />
-    <entry file="file://$PROJECT_DIR$/QA/resources/stopwords.txt" />
-    <entry file="file://$PROJECT_DIR$/QASnake.egg-info/top_level.txt" />
-    <entry file="file://$PROJECT_DIR$/QASnake.egg-info/SOURCES.txt" />
-    <entry file="file://$PROJECT_DIR$/QASnake.egg-info/PKG-INFO" />
-    <entry file="file://$PROJECT_DIR$/pynlpir更新/更新文件地址.txt" />
-    <entry file="file://$PROJECT_DIR$/README.md" />
-    <entry file="file://E:/Python/python2.7.14/Lib/site-packages/pynlpir/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/qa.spec" />
-    <entry file="file://$PROJECT_DIR$/QA/resources/Attribute_name.txt" />
-    <entry file="file://$PROJECT_DIR$/QA/resources/bad.aiml" />
-    <entry file="file://$PROJECT_DIR$/QA/resources/tools.aiml" />
-    <entry file="file://$PROJECT_DIR$/QA/resources/SynonDic.txt" />
-    <entry file="file://$PROJECT_DIR$/QA/resources/QAattrdic.txt" />
-    <entry file="file://$PROJECT_DIR$/QA/resources/Common conversation.aiml" />
-    <entry file="file://$PROJECT_DIR$/QA/resources/funny.aiml" />
-    <entry file="file://E:/Python/python2.7.14/Lib/site-packages/bs4/element.py" />
-    <entry file="file://$PROJECT_DIR$/QA/resources/bye.aiml" />
-    <entry file="file://E:/anaconda/envs/Linx_py2.7/Lib/site-packages/aiml/Kernel.py" />
-    <entry file="file://$PROJECT_DIR$/QA/resources/NLPIR词性分类表.txt" />
-    <entry file="file://$PROJECT_DIR$/QA/resources/结巴分词词性表.txt" />
-    <entry file="file://E:/anaconda/envs/Linx_py2.7/Lib/site-packages/jieba/posseg/__init__.py" />
-    <entry file="file://E:/anaconda/envs/Linx_py2.7/Lib/site-packages/synonyms/synonyms.py" />
-    <entry file="file://$PROJECT_DIR$/QA/resources/OrdinaryQuestion.aiml" />
-    <entry file="file://E:/anaconda/envs/Linx_py2.7/Lib/site-packages/h5py/tests/old/test_group.py" />
-    <entry file="file://E:/anaconda/envs/Linx_py2.7/Lib/json/tests/test_pass2.py" />
-    <entry file="file://$PROJECT_DIR$/aip/base.py" />
-    <entry file="file://$PROJECT_DIR$/aip/nlp.py" />
-    <entry file="file://$PROJECT_DIR$/bin/aip_client" />
-    <entry file="file://$PROJECT_DIR$/QA/QACrawler/baike.py" />
-    <entry file="file://E:/anaconda/envs/Linx_py2.7/Lib/encodings/utf_8.py" />
-    <entry file="file://$PROJECT_DIR$/setup.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/setup(1).py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/QA/MainProgram.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://E:/Python/python2.7.14/Lib/site-packages/jieba/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/QA/Tools/fenci.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/QA/Tools/xlsxToMysql.py">
-=======
-    <entry file="file://E:/Python/python2.7.14/Lib/site-packages/jieba/__init__.py">
->>>>>>> origin/master
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="839">
-          <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/QA/qa.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/QA/Tools/TextProcess.py">
+    <entry file="file://$PROJECT_DIR$/.gitignore.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/QA/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/QA/Tools/Html_Tools.py">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="115">
-          <caret line="56" column="60" lean-forward="false" selection-start-line="56" selection-start-column="60" selection-end-line="56" selection-end-column="60" />
-=======
-        <state relative-caret-position="4655">
-          <caret line="249" column="36" lean-forward="false" selection-start-line="249" selection-start-column="36" selection-end-line="249" selection-end-column="36" />
->>>>>>> origin/master
-          <folding>
-            <element signature="e#42#71#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/QA/QACrawler/search_summary.py">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="243">
-          <caret line="336" column="13" lean-forward="false" selection-start-line="336" selection-start-column="13" selection-end-line="336" selection-end-column="13" />
-=======
-        <state relative-caret-position="2166">
-          <caret line="118" column="0" lean-forward="false" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
->>>>>>> origin/master
-          <folding>
-            <element signature="e#14#25#0" expanded="true" />
-            <element signature="e#399#999#0" expanded="false" />
-            <element signature="e#1038#1474#0" expanded="false" />
-            <element signature="e#1514#1967#0" expanded="false" />
-            <element signature="e#2005#2201#0" expanded="false" />
-            <element signature="e#2243#2844#0" expanded="false" />
-            <element signature="e#2885#3377#0" expanded="false" />
-            <element signature="e#3414#3781#0" expanded="false" />
-            <element signature="e#3816#4183#0" expanded="false" />
-            <element signature="e#4230#4518#0" expanded="false" />
-            <element signature="e#4562#4941#0" expanded="false" />
-            <element signature="e#4978#5521#0" expanded="false" />
-            <element signature="e#5559#6004#0" expanded="false" />
-            <element signature="e#6039#6288#0" expanded="false" />
-            <element signature="e#6326#6539#0" expanded="false" />
-            <element signature="e#6575#6813#0" expanded="false" />
-            <element signature="e#6850#7229#0" expanded="false" />
-            <element signature="e#7267#7646#0" expanded="false" />
-            <element signature="e#7689#8068#0" expanded="false" />
-            <element signature="e#8110#8490#0" expanded="false" />
-            <element signature="e#8537#8917#0" expanded="false" />
-            <element signature="e#8957#9337#0" expanded="false" />
-            <element signature="e#9374#9917#0" expanded="false" />
-            <element signature="e#10007#10013#0" expanded="false" />
-            <element signature="e#14653#15097#0" expanded="false" />
-            <element signature="e#16855#17375#0" expanded="false" />
-            <element signature="e#20372#20384#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="170" column="48" lean-forward="false" selection-start-line="170" selection-start-column="48" selection-end-line="170" selection-end-column="48" />
-          <folding>
-            <marker date="1533552150555" expanded="true" signature="1404:1460" ph="SELECT `学校名称... allschool" />
-            <marker date="1533552150555" expanded="true" signature="2675:2725" ph="SELECT `学校名`... 学校简称" />
-            <marker date="1533552150555" expanded="true" signature="3607:3659" ph="SELECT `属性`,... school" />
-          </folding>
-=======
-    <entry file="file://$PROJECT_DIR$/QA/Tools/xlsxToMysql.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1493">
-          <caret line="92" column="0" lean-forward="true" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
-          <folding>
-            <element signature="e#29#44#0" expanded="true" />
-            <marker date="1533552519446" expanded="true" signature="814:925" ph="SELECT COUNT... TABLES" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/QA/Tools/fenci.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="44" lean-forward="true" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
-          <folding />
->>>>>>> origin/master
         </state>
       </provider>
     </entry>
