@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="d0287a7f-a81e-481f-a6e2-4176ef133cd2" name="默认的" comment=" 爬虫快更改完毕">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/server.py" afterPath="$PROJECT_DIR$/server.py" />
+=======
+    <list default="true" id="d0287a7f-a81e-481f-a6e2-4176ef133cd2" name="默认的" comment="2018/8/2&#10;添加学校简称替换功能&#10;更新百度知道爬取">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/QA/Tools/fenci.py" afterPath="$PROJECT_DIR$/QA/Tools/fenci.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/QA/Tools/xlsxToMysql.py" afterPath="$PROJECT_DIR$/QA/Tools/xlsxToMysql.py" />
+>>>>>>> origin/master
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,8 +25,16 @@
     <SUITE FILE_PATH="coverage/QA_Snake$qa.coverage" NAME="qa Coverage Results" MODIFIED="1512652019015" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QA" />
     <SUITE FILE_PATH="coverage/QA_Snake$search_summary.coverage" NAME="search_summary Coverage Results" MODIFIED="1514397629331" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QA/QACrawler" />
     <SUITE FILE_PATH="coverage/QA_Snake$server.coverage" NAME="server Coverage Results" MODIFIED="1514355372219" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QA" />
+<<<<<<< HEAD
     <SUITE FILE_PATH="coverage/ZWGX$MainProgram.coverage" NAME="MainProgram Coverage Results" MODIFIED="1528172091601" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QA" />
     <SUITE FILE_PATH="coverage/ZWGX$search_summary.coverage" NAME="search_summary Coverage Results" MODIFIED="1533536532280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QA/QACrawler" />
+=======
+    <SUITE FILE_PATH="coverage/QA_Snake$MainProgram.coverage" NAME="MainProgram Coverage Results" MODIFIED="1514716824919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QA" />
+    <SUITE FILE_PATH="coverage/QA_Snake$server__1_.coverage" NAME="server (1) Coverage Results" MODIFIED="1514718111443" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ZWGX$qa.coverage" NAME="qa Coverage Results" MODIFIED="1533552571535" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QA" />
+    <SUITE FILE_PATH="coverage/ZWGX$MainProgram.coverage" NAME="MainProgram Coverage Results" MODIFIED="1528172091601" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QA" />
+    <SUITE FILE_PATH="coverage/ZWGX$xlsxToMysql.coverage" NAME="xlsxToMysql Coverage Results" MODIFIED="1533552519493" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QA/Tools" />
+>>>>>>> origin/master
     <SUITE FILE_PATH="coverage/ZWGX$server.coverage" NAME="server Coverage Results" MODIFIED="1533133036230" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ZWGX$xlsxToMysql.coverage" NAME="xlsxToMysql Coverage Results" MODIFIED="1531310176723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QA/Tools" />
     <SUITE FILE_PATH="coverage/ZWGX$qa.coverage" NAME="qa Coverage Results" MODIFIED="1533551948501" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QA" />
@@ -32,8 +47,13 @@
       <file leaf-file-name="Html_Tools.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/QA/Tools/Html_Tools.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="115">
               <caret line="56" column="60" lean-forward="false" selection-start-line="56" selection-start-column="60" selection-end-line="56" selection-end-column="60" />
+=======
+            <state relative-caret-position="2166">
+              <caret line="118" column="0" lean-forward="false" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+>>>>>>> origin/master
               <folding>
                 <element signature="e#42#71#0" expanded="true" />
               </folding>
@@ -44,8 +64,13 @@
       <file leaf-file-name="search_summary.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/QA/QACrawler/search_summary.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="243">
               <caret line="336" column="13" lean-forward="false" selection-start-line="336" selection-start-column="13" selection-end-line="336" selection-end-column="13" />
+=======
+            <state relative-caret-position="4655">
+              <caret line="249" column="36" lean-forward="false" selection-start-line="249" selection-start-column="36" selection-end-line="249" selection-end-column="36" />
+>>>>>>> origin/master
               <folding>
                 <element signature="e#14#25#0" expanded="true" />
                 <element signature="e#399#999#0" expanded="false" />
@@ -79,6 +104,7 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="server.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -88,6 +114,56 @@
                 <marker date="1533552150555" expanded="true" signature="1404:1460" ph="SELECT `学校名称... allschool" />
                 <marker date="1533552150555" expanded="true" signature="2675:2725" ph="SELECT `学校名`... 学校简称" />
                 <marker date="1533552150555" expanded="true" signature="3607:3659" ph="SELECT `属性`,... school" />
+=======
+      <file leaf-file-name="fenci.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/QA/Tools/fenci.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="3" column="44" lean-forward="true" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/QA/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="5" column="34" lean-forward="false" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Html_Tools.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/QA/Tools/Html_Tools.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="qa.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/QA/qa.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="xlsxToMysql.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/QA/Tools/xlsxToMysql.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1493">
+              <caret line="92" column="0" lean-forward="true" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+              <folding>
+                <element signature="e#29#44#0" expanded="true" />
+                <marker date="1533552519446" expanded="true" signature="814:925" ph="SELECT COUNT... TABLES" />
+>>>>>>> origin/master
               </folding>
             </state>
           </provider>
@@ -178,12 +254,20 @@
         <option value="$PROJECT_DIR$/QA/qa.py" />
         <option value="E:/anaconda/envs/Linx_py2.7/Lib/site-packages/synonyms/synonyms.py" />
         <option value="$PROJECT_DIR$/QA/Tools/TextProcess.py" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/QA/Tools/xlsxToMysql.py" />
         <option value="$PROJECT_DIR$/QA/Tools/fenci.py" />
         <option value="$PROJECT_DIR$/QA/Tools/Html_Tools.py" />
         <option value="$PROJECT_DIR$/QA/test.py" />
         <option value="$PROJECT_DIR$/QA/QACrawler/search_summary.py" />
         <option value="$PROJECT_DIR$/server.py" />
+=======
+        <option value="$PROJECT_DIR$/QA/test.py" />
+        <option value="$PROJECT_DIR$/server.py" />
+        <option value="$PROJECT_DIR$/QA/QACrawler/search_summary.py" />
+        <option value="$PROJECT_DIR$/QA/Tools/fenci.py" />
+        <option value="$PROJECT_DIR$/QA/Tools/xlsxToMysql.py" />
+>>>>>>> origin/master
       </list>
     </option>
   </component>
@@ -214,6 +298,10 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+<<<<<<< HEAD
+=======
+      <pane id="Scope" />
+>>>>>>> origin/master
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -236,7 +324,10 @@
           <select />
         </subPane>
       </pane>
+<<<<<<< HEAD
       <pane id="Scope" />
+=======
+>>>>>>> origin/master
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -510,10 +601,17 @@
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.qa" />
+<<<<<<< HEAD
         <item index="1" class="java.lang.String" itemvalue="Python.search_summary" />
         <item index="2" class="java.lang.String" itemvalue="Python.test" />
         <item index="3" class="java.lang.String" itemvalue="Python.server" />
         <item index="4" class="java.lang.String" itemvalue="Python.xlsxToMysql" />
+=======
+        <item index="1" class="java.lang.String" itemvalue="Python.xlsxToMysql" />
+        <item index="2" class="java.lang.String" itemvalue="Python.server" />
+        <item index="3" class="java.lang.String" itemvalue="Python.test" />
+        <item index="4" class="java.lang.String" itemvalue="Python.search_summary" />
+>>>>>>> origin/master
       </list>
     </recent_temporary>
   </component>
@@ -636,6 +734,7 @@
       <option name="project" value="LOCAL" />
       <updated>1533044481956</updated>
     </task>
+<<<<<<< HEAD
     <task id="LOCAL-00016" summary="完成意图分析">
       <created>1533530229854</created>
       <option name="number" value="00016" />
@@ -658,6 +757,16 @@
       <updated>1533552061678</updated>
     </task>
     <option name="localTasksCounter" value="19" />
+=======
+    <task id="LOCAL-00016" summary="2018/8/2&#10;添加学校简称替换功能&#10;更新百度知道爬取">
+      <created>1533222082559</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1533222082559</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
+>>>>>>> origin/master
     <servers />
   </component>
   <component name="TodoView">
@@ -673,7 +782,9 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15191898" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32838982" sideWeight="0.5170576" order="13" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36585367" sideWeight="0.8307292" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.4978678" order="9" side_tool="false" content_ui="tabs" />
@@ -697,6 +808,17 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286334" sideWeight="0.48294243" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.335141" sideWeight="0.5191898" order="13" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.4978678" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20390455" sideWeight="0.47441363" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.4936034" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.335141" sideWeight="0.48081023" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+>>>>>>> origin/master
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -721,10 +843,15 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30752915" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
+=======
+      <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+    </layout>
+>>>>>>> origin/master
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -749,9 +876,14 @@
     <MESSAGE value="默认的" />
     <MESSAGE value="2018/7/9&#10;修复抓取mu越界问题&#10;修复h3不存在问题" />
     <MESSAGE value="2018/7/31&#10;同步" />
+<<<<<<< HEAD
     <MESSAGE value="完成意图分析" />
     <MESSAGE value=" 爬虫快更改完毕" />
     <option name="LAST_COMMIT_MESSAGE" value=" 爬虫快更改完毕" />
+=======
+    <MESSAGE value="2018/8/2&#10;添加学校简称替换功能&#10;更新百度知道爬取" />
+    <option name="LAST_COMMIT_MESSAGE" value="2018/8/2&#10;添加学校简称替换功能&#10;更新百度知道爬取" />
+>>>>>>> origin/master
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -820,6 +952,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://E:/Python/python2.7.14/Lib/site-packages/jieba/__init__.py" />
     <entry file="file://$PROJECT_DIR$/QA/Tools/fenci.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -829,6 +962,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/QA/Tools/xlsxToMysql.py">
+=======
+    <entry file="file://E:/Python/python2.7.14/Lib/site-packages/jieba/__init__.py">
+>>>>>>> origin/master
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="839">
           <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
@@ -860,8 +996,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/QA/Tools/Html_Tools.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="115">
           <caret line="56" column="60" lean-forward="false" selection-start-line="56" selection-start-column="60" selection-end-line="56" selection-end-column="60" />
+=======
+        <state relative-caret-position="4655">
+          <caret line="249" column="36" lean-forward="false" selection-start-line="249" selection-start-column="36" selection-end-line="249" selection-end-column="36" />
+>>>>>>> origin/master
           <folding>
             <element signature="e#42#71#0" expanded="true" />
           </folding>
@@ -870,8 +1011,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/QA/QACrawler/search_summary.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="243">
           <caret line="336" column="13" lean-forward="false" selection-start-line="336" selection-start-column="13" selection-end-line="336" selection-end-column="13" />
+=======
+        <state relative-caret-position="2166">
+          <caret line="118" column="0" lean-forward="false" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+>>>>>>> origin/master
           <folding>
             <element signature="e#14#25#0" expanded="true" />
             <element signature="e#399#999#0" expanded="false" />
@@ -904,6 +1050,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/server.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
@@ -913,6 +1060,24 @@
             <marker date="1533552150555" expanded="true" signature="2675:2725" ph="SELECT `学校名`... 学校简称" />
             <marker date="1533552150555" expanded="true" signature="3607:3659" ph="SELECT `属性`,... school" />
           </folding>
+=======
+    <entry file="file://$PROJECT_DIR$/QA/Tools/xlsxToMysql.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1493">
+          <caret line="92" column="0" lean-forward="true" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+          <folding>
+            <element signature="e#29#44#0" expanded="true" />
+            <marker date="1533552519446" expanded="true" signature="814:925" ph="SELECT COUNT... TABLES" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/QA/Tools/fenci.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="44" lean-forward="true" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
+          <folding />
+>>>>>>> origin/master
         </state>
       </provider>
     </entry>
