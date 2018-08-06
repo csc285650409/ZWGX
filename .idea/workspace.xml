@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d0287a7f-a81e-481f-a6e2-4176ef133cd2" name="默认的" comment="完成意图分析">
+    <list default="true" id="d0287a7f-a81e-481f-a6e2-4176ef133cd2" name="默认的" comment=" 爬虫快更改完毕">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/QA/QACrawler/search_summary.py" afterPath="$PROJECT_DIR$/QA/QACrawler/search_summary.py" />
-      <change beforePath="$PROJECT_DIR$/server.py" afterPath="$PROJECT_DIR$/server.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,7 +22,7 @@
     <SUITE FILE_PATH="coverage/ZWGX$search_summary.coverage" NAME="search_summary Coverage Results" MODIFIED="1533536532280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QA/QACrawler" />
     <SUITE FILE_PATH="coverage/ZWGX$server.coverage" NAME="server Coverage Results" MODIFIED="1533133036230" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ZWGX$xlsxToMysql.coverage" NAME="xlsxToMysql Coverage Results" MODIFIED="1531310176723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QA/Tools" />
-    <SUITE FILE_PATH="coverage/ZWGX$qa.coverage" NAME="qa Coverage Results" MODIFIED="1533544266026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QA" />
+    <SUITE FILE_PATH="coverage/ZWGX$qa.coverage" NAME="qa Coverage Results" MODIFIED="1533551948501" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QA" />
     <SUITE FILE_PATH="coverage/ZWGX$test.coverage" NAME="test Coverage Results" MODIFIED="1533527424179" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QA" />
     <SUITE FILE_PATH="coverage/QA_Snake$MainProgram.coverage" NAME="MainProgram Coverage Results" MODIFIED="1514716824919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QA" />
     <SUITE FILE_PATH="coverage/ZWGX$setup_1_.coverage" NAME="setup(1) Coverage Results" MODIFIED="1529830109336" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -42,11 +41,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search_summary.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="search_summary.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/QA/QACrawler/search_summary.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="551" column="38" lean-forward="true" selection-start-line="551" selection-start-column="38" selection-end-line="551" selection-end-column="38" />
+            <state relative-caret-position="243">
+              <caret line="336" column="13" lean-forward="false" selection-start-line="336" selection-start-column="13" selection-end-line="336" selection-end-column="13" />
               <folding>
                 <element signature="e#14#25#0" expanded="true" />
                 <element signature="e#399#999#0" expanded="false" />
@@ -57,34 +56,34 @@
                 <element signature="e#2885#3377#0" expanded="false" />
                 <element signature="e#3414#3781#0" expanded="false" />
                 <element signature="e#3816#4183#0" expanded="false" />
-                <element signature="e#4230#4462#0" expanded="false" />
-                <element signature="e#4506#4885#0" expanded="false" />
-                <element signature="e#4922#5465#0" expanded="false" />
-                <element signature="e#5503#5948#0" expanded="false" />
-                <element signature="e#5983#6232#0" expanded="false" />
-                <element signature="e#6270#6483#0" expanded="false" />
-                <element signature="e#6519#6757#0" expanded="false" />
-                <element signature="e#6794#7173#0" expanded="false" />
-                <element signature="e#7211#7590#0" expanded="false" />
-                <element signature="e#7633#8012#0" expanded="false" />
-                <element signature="e#8054#8434#0" expanded="false" />
-                <element signature="e#8481#8861#0" expanded="false" />
-                <element signature="e#8901#9281#0" expanded="false" />
-                <element signature="e#9318#9861#0" expanded="false" />
-                <element signature="e#9951#9957#0" expanded="false" />
-                <element signature="e#14584#15028#0" expanded="false" />
-                <element signature="e#16786#17306#0" expanded="false" />
-                <element signature="e#20303#20315#0" expanded="false" />
+                <element signature="e#4230#4518#0" expanded="false" />
+                <element signature="e#4562#4941#0" expanded="false" />
+                <element signature="e#4978#5521#0" expanded="false" />
+                <element signature="e#5559#6004#0" expanded="false" />
+                <element signature="e#6039#6288#0" expanded="false" />
+                <element signature="e#6326#6539#0" expanded="false" />
+                <element signature="e#6575#6813#0" expanded="false" />
+                <element signature="e#6850#7229#0" expanded="false" />
+                <element signature="e#7267#7646#0" expanded="false" />
+                <element signature="e#7689#8068#0" expanded="false" />
+                <element signature="e#8110#8490#0" expanded="false" />
+                <element signature="e#8537#8917#0" expanded="false" />
+                <element signature="e#8957#9337#0" expanded="false" />
+                <element signature="e#9374#9917#0" expanded="false" />
+                <element signature="e#10007#10013#0" expanded="false" />
+                <element signature="e#14653#15097#0" expanded="false" />
+                <element signature="e#16855#17375#0" expanded="false" />
+                <element signature="e#20372#20384#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="server.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="server.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="188" column="38" lean-forward="false" selection-start-line="188" selection-start-column="38" selection-end-line="188" selection-end-column="38" />
+            <state relative-caret-position="729">
+              <caret line="215" column="28" lean-forward="true" selection-start-line="215" selection-start-column="28" selection-end-line="215" selection-end-column="28" />
               <folding>
                 <marker date="1533543076997" expanded="true" signature="1404:1460" ph="SELECT `学校名称... allschool" />
                 <marker date="1533543076997" expanded="true" signature="2675:2725" ph="SELECT `学校名`... 学校简称" />
@@ -644,7 +643,14 @@
       <option name="project" value="LOCAL" />
       <updated>1533530229854</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary=" 爬虫快更改完毕">
+      <created>1533544403741</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1533544403741</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TodoView">
@@ -662,7 +668,7 @@
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32838982" sideWeight="0.5170576" order="13" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36585367" sideWeight="0.8307292" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36585367" sideWeight="0.8307292" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.4978678" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20390455" sideWeight="0.47441363" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.4936034" order="11" side_tool="false" content_ui="tabs" />
@@ -672,7 +678,7 @@
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30646873" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30646873" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3286334" sideWeight="0.48294243" order="8" side_tool="false" content_ui="tabs" />
@@ -737,17 +743,11 @@
     <MESSAGE value="2018/7/9&#10;修复抓取mu越界问题&#10;修复h3不存在问题" />
     <MESSAGE value="2018/7/31&#10;同步" />
     <MESSAGE value="完成意图分析" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成意图分析" />
+    <MESSAGE value=" 爬虫快更改完毕" />
+    <option name="LAST_COMMIT_MESSAGE" value=" 爬虫快更改完毕" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/QA/QACrawler/search_summary.py</url>
-          <line>358</line>
-          <option name="timeStamp" value="67" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="68" />
     </breakpoint-manager>
     <watches-manager />
@@ -861,22 +861,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="188" column="38" lean-forward="false" selection-start-line="188" selection-start-column="38" selection-end-line="188" selection-end-column="38" />
-          <folding>
-            <marker date="1533543076997" expanded="true" signature="1404:1460" ph="SELECT `学校名称... allschool" />
-            <marker date="1533543076997" expanded="true" signature="2675:2725" ph="SELECT `学校名`... 学校简称" />
-            <marker date="1533543076997" expanded="true" signature="3607:3659" ph="SELECT `属性`,... school" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/QA/QACrawler/search_summary.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="551" column="38" lean-forward="true" selection-start-line="551" selection-start-column="38" selection-end-line="551" selection-end-column="38" />
+        <state relative-caret-position="243">
+          <caret line="336" column="13" lean-forward="false" selection-start-line="336" selection-start-column="13" selection-end-line="336" selection-end-column="13" />
           <folding>
             <element signature="e#14#25#0" expanded="true" />
             <element signature="e#399#999#0" expanded="false" />
@@ -887,24 +875,36 @@
             <element signature="e#2885#3377#0" expanded="false" />
             <element signature="e#3414#3781#0" expanded="false" />
             <element signature="e#3816#4183#0" expanded="false" />
-            <element signature="e#4230#4462#0" expanded="false" />
-            <element signature="e#4506#4885#0" expanded="false" />
-            <element signature="e#4922#5465#0" expanded="false" />
-            <element signature="e#5503#5948#0" expanded="false" />
-            <element signature="e#5983#6232#0" expanded="false" />
-            <element signature="e#6270#6483#0" expanded="false" />
-            <element signature="e#6519#6757#0" expanded="false" />
-            <element signature="e#6794#7173#0" expanded="false" />
-            <element signature="e#7211#7590#0" expanded="false" />
-            <element signature="e#7633#8012#0" expanded="false" />
-            <element signature="e#8054#8434#0" expanded="false" />
-            <element signature="e#8481#8861#0" expanded="false" />
-            <element signature="e#8901#9281#0" expanded="false" />
-            <element signature="e#9318#9861#0" expanded="false" />
-            <element signature="e#9951#9957#0" expanded="false" />
-            <element signature="e#14584#15028#0" expanded="false" />
-            <element signature="e#16786#17306#0" expanded="false" />
-            <element signature="e#20303#20315#0" expanded="false" />
+            <element signature="e#4230#4518#0" expanded="false" />
+            <element signature="e#4562#4941#0" expanded="false" />
+            <element signature="e#4978#5521#0" expanded="false" />
+            <element signature="e#5559#6004#0" expanded="false" />
+            <element signature="e#6039#6288#0" expanded="false" />
+            <element signature="e#6326#6539#0" expanded="false" />
+            <element signature="e#6575#6813#0" expanded="false" />
+            <element signature="e#6850#7229#0" expanded="false" />
+            <element signature="e#7267#7646#0" expanded="false" />
+            <element signature="e#7689#8068#0" expanded="false" />
+            <element signature="e#8110#8490#0" expanded="false" />
+            <element signature="e#8537#8917#0" expanded="false" />
+            <element signature="e#8957#9337#0" expanded="false" />
+            <element signature="e#9374#9917#0" expanded="false" />
+            <element signature="e#10007#10013#0" expanded="false" />
+            <element signature="e#14653#15097#0" expanded="false" />
+            <element signature="e#16855#17375#0" expanded="false" />
+            <element signature="e#20372#20384#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="729">
+          <caret line="215" column="28" lean-forward="true" selection-start-line="215" selection-start-column="28" selection-end-line="215" selection-end-column="28" />
+          <folding>
+            <marker date="1533543076997" expanded="true" signature="1404:1460" ph="SELECT `学校名称... allschool" />
+            <marker date="1533543076997" expanded="true" signature="2675:2725" ph="SELECT `学校名`... 学校简称" />
+            <marker date="1533543076997" expanded="true" signature="3607:3659" ph="SELECT `属性`,... school" />
           </folding>
         </state>
       </provider>

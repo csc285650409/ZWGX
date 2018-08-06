@@ -125,9 +125,11 @@ def work(schoolname,req):
 #就业情况
 def schoolproperty(schoolname,req):
     try:
-        soup = To.get_html_baidu_selenium1(schoolname, req)
-        soup = soup.find(class_ = "zx-yx-baseinfo").find_all("span")
-        return schoolname + "是一所" + soup[2].text[6:].encode("utf-8")
+        soup = To.get_html_baidu("https://baike.baidu.com/item/" + schoolname, req)
+        soup = soup.find(class_ = "lemma-summary").find("div").text
+        if '[' in soup and ']' in soup:
+            soup = soup[:soup.index('[')]
+        return soup
     except:
         return ""
 #学校性质
@@ -332,7 +334,7 @@ def kwquery(query,intention,schoolname):
         '学校代码': schoolcode,
         '师资力量': team,
     }
-
+    #switch语句
     if intention != "" and schoolname != "":
         if dic[intention](schoolname, req) != "":
             answer.append(dic[intention](schoolname, req))
