@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d0287a7f-a81e-481f-a6e2-4176ef133cd2" name="默认的" comment=" 爬虫快更改完毕">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/QA/QACrawler/search_summary.py" afterPath="$PROJECT_DIR$/QA/QACrawler/search_summary.py" />
+      <change beforePath="$PROJECT_DIR$/server.py" afterPath="$PROJECT_DIR$/server.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -82,12 +82,12 @@
       <file leaf-file-name="server.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="729">
-              <caret line="215" column="28" lean-forward="true" selection-start-line="215" selection-start-column="28" selection-end-line="215" selection-end-column="28" />
+            <state relative-caret-position="96">
+              <caret line="170" column="48" lean-forward="false" selection-start-line="170" selection-start-column="48" selection-end-line="170" selection-end-column="48" />
               <folding>
-                <marker date="1533543076997" expanded="true" signature="1404:1460" ph="SELECT `学校名称... allschool" />
-                <marker date="1533543076997" expanded="true" signature="2675:2725" ph="SELECT `学校名`... 学校简称" />
-                <marker date="1533543076997" expanded="true" signature="3607:3659" ph="SELECT `属性`,... school" />
+                <marker date="1533552150555" expanded="true" signature="1404:1460" ph="SELECT `学校名称... allschool" />
+                <marker date="1533552150555" expanded="true" signature="2675:2725" ph="SELECT `学校名`... 学校简称" />
+                <marker date="1533552150555" expanded="true" signature="3607:3659" ph="SELECT `属性`,... school" />
               </folding>
             </state>
           </provider>
@@ -182,8 +182,8 @@
         <option value="$PROJECT_DIR$/QA/Tools/fenci.py" />
         <option value="$PROJECT_DIR$/QA/Tools/Html_Tools.py" />
         <option value="$PROJECT_DIR$/QA/test.py" />
-        <option value="$PROJECT_DIR$/server.py" />
         <option value="$PROJECT_DIR$/QA/QACrawler/search_summary.py" />
+        <option value="$PROJECT_DIR$/server.py" />
       </list>
     </option>
   </component>
@@ -650,7 +650,14 @@
       <option name="project" value="LOCAL" />
       <updated>1533544403741</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary=" 爬虫快更改完毕">
+      <created>1533552061678</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1533552061678</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TodoView">
@@ -899,12 +906,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="729">
-          <caret line="215" column="28" lean-forward="true" selection-start-line="215" selection-start-column="28" selection-end-line="215" selection-end-column="28" />
+        <state relative-caret-position="96">
+          <caret line="170" column="48" lean-forward="false" selection-start-line="170" selection-start-column="48" selection-end-line="170" selection-end-column="48" />
           <folding>
-            <marker date="1533543076997" expanded="true" signature="1404:1460" ph="SELECT `学校名称... allschool" />
-            <marker date="1533543076997" expanded="true" signature="2675:2725" ph="SELECT `学校名`... 学校简称" />
-            <marker date="1533543076997" expanded="true" signature="3607:3659" ph="SELECT `属性`,... school" />
+            <marker date="1533552150555" expanded="true" signature="1404:1460" ph="SELECT `学校名称... allschool" />
+            <marker date="1533552150555" expanded="true" signature="2675:2725" ph="SELECT `学校名`... 学校简称" />
+            <marker date="1533552150555" expanded="true" signature="3607:3659" ph="SELECT `属性`,... school" />
           </folding>
         </state>
       </provider>

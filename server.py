@@ -170,9 +170,7 @@ def QA(input_message,mybot):
                 # elif response.__contains__("NoMatchingTemplate"):
                 #     print "NoMatchingTemplate"
 
-
                 if (schoolname != ""):
-
                     sock = socket(AF_INET, SOCK_STREAM)
                     sock.connect(('127.0.0.1', 50009))
                     sock.sendall(input_message.encode("utf-8"))
