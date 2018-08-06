@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d0287a7f-a81e-481f-a6e2-4176ef133cd2" name="默认的" comment="2018/8/2&#10;添加学校简称替换功能&#10;更新百度知道爬取">
-      <change beforePath="" afterPath="$PROJECT_DIR$/QA/QACrawler/ghostdriver.log" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/QA/Tools/chromedriver.exe" />
-      <change beforePath="$PROJECT_DIR$/.idea/ZWGX.iml" afterPath="$PROJECT_DIR$/.idea/ZWGX.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="d0287a7f-a81e-481f-a6e2-4176ef133cd2" name="默认的" comment="完成意图分析">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/QA/QACrawler/search_summary.py" afterPath="$PROJECT_DIR$/QA/QACrawler/search_summary.py" />
-      <change beforePath="$PROJECT_DIR$/QA/Tools/Html_Tools.py" afterPath="$PROJECT_DIR$/QA/Tools/Html_Tools.py" />
-      <change beforePath="$PROJECT_DIR$/QA/test.py" afterPath="$PROJECT_DIR$/QA/test.py" />
       <change beforePath="$PROJECT_DIR$/server.py" afterPath="$PROJECT_DIR$/server.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,10 +20,10 @@
     <SUITE FILE_PATH="coverage/QA_Snake$search_summary.coverage" NAME="search_summary Coverage Results" MODIFIED="1514397629331" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QA/QACrawler" />
     <SUITE FILE_PATH="coverage/QA_Snake$server.coverage" NAME="server Coverage Results" MODIFIED="1514355372219" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QA" />
     <SUITE FILE_PATH="coverage/ZWGX$MainProgram.coverage" NAME="MainProgram Coverage Results" MODIFIED="1528172091601" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QA" />
-    <SUITE FILE_PATH="coverage/ZWGX$search_summary.coverage" NAME="search_summary Coverage Results" MODIFIED="1533529165759" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QA/QACrawler" />
+    <SUITE FILE_PATH="coverage/ZWGX$search_summary.coverage" NAME="search_summary Coverage Results" MODIFIED="1533536532280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QA/QACrawler" />
     <SUITE FILE_PATH="coverage/ZWGX$server.coverage" NAME="server Coverage Results" MODIFIED="1533133036230" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ZWGX$xlsxToMysql.coverage" NAME="xlsxToMysql Coverage Results" MODIFIED="1531310176723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QA/Tools" />
-    <SUITE FILE_PATH="coverage/ZWGX$qa.coverage" NAME="qa Coverage Results" MODIFIED="1533473187451" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QA" />
+    <SUITE FILE_PATH="coverage/ZWGX$qa.coverage" NAME="qa Coverage Results" MODIFIED="1533544266026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QA" />
     <SUITE FILE_PATH="coverage/ZWGX$test.coverage" NAME="test Coverage Results" MODIFIED="1533527424179" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QA" />
     <SUITE FILE_PATH="coverage/QA_Snake$MainProgram.coverage" NAME="MainProgram Coverage Results" MODIFIED="1514716824919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/QA" />
     <SUITE FILE_PATH="coverage/ZWGX$setup_1_.coverage" NAME="setup(1) Coverage Results" MODIFIED="1529830109336" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -40,7 +34,7 @@
         <entry file="file://$PROJECT_DIR$/QA/Tools/Html_Tools.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="115">
-              <caret line="56" column="60" lean-forward="true" selection-start-line="56" selection-start-column="60" selection-end-line="56" selection-end-column="60" />
+              <caret line="56" column="60" lean-forward="false" selection-start-line="56" selection-start-column="60" selection-end-line="56" selection-end-column="60" />
               <folding>
                 <element signature="e#42#71#0" expanded="true" />
               </folding>
@@ -51,52 +45,37 @@
       <file leaf-file-name="search_summary.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/QA/QACrawler/search_summary.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="368" column="5" lean-forward="true" selection-start-line="368" selection-start-column="5" selection-end-line="368" selection-end-column="5" />
+            <state relative-caret-position="181">
+              <caret line="551" column="38" lean-forward="true" selection-start-line="551" selection-start-column="38" selection-end-line="551" selection-end-column="38" />
               <folding>
                 <element signature="e#14#25#0" expanded="true" />
-                <element signature="e#399#1027#0" expanded="false" />
-                <element signature="e#1066#1530#0" expanded="false" />
-                <element signature="e#1570#2051#0" expanded="false" />
-                <element signature="e#2089#2313#0" expanded="false" />
-                <element signature="e#2355#2984#0" expanded="false" />
-                <element signature="e#3025#3547#0" expanded="false" />
-                <element signature="e#3584#3979#0" expanded="false" />
-                <element signature="e#4014#4409#0" expanded="false" />
-                <element signature="e#4456#4716#0" expanded="false" />
-                <element signature="e#4760#5167#0" expanded="false" />
-                <element signature="e#5204#5775#0" expanded="false" />
-                <element signature="e#5813#6286#0" expanded="false" />
-                <element signature="e#6321#6598#0" expanded="false" />
-                <element signature="e#6634#6900#0" expanded="false" />
-                <element signature="e#6937#7344#0" expanded="false" />
-                <element signature="e#7382#7789#0" expanded="false" />
-                <element signature="e#7832#8239#0" expanded="false" />
-                <element signature="e#8281#8689#0" expanded="false" />
-                <element signature="e#8736#9144#0" expanded="false" />
-                <element signature="e#9184#9594#0" expanded="false" />
-                <element signature="e#9631#10202#0" expanded="false" />
-                <element signature="e#10935#10941#0" expanded="false" />
-                <element signature="e#12346#20701#0" expanded="false" />
-                <element signature="e#14882#15296#0" expanded="false" />
-                <element signature="e#15484#15928#0" expanded="false" />
-                <element signature="e#16056#16900#0" expanded="false" />
-                <element signature="e#17023#17478#0" expanded="false" />
-                <element signature="e#17686#18206#0" expanded="false" />
-                <element signature="e#18300#19571#0" expanded="false" />
-                <element signature="e#19632#20661#0" expanded="false" />
-                <element signature="e#21203#21215#0" expanded="false" />
+                <element signature="e#399#999#0" expanded="false" />
+                <element signature="e#1038#1474#0" expanded="false" />
+                <element signature="e#1514#1967#0" expanded="false" />
+                <element signature="e#2005#2201#0" expanded="false" />
+                <element signature="e#2243#2844#0" expanded="false" />
+                <element signature="e#2885#3377#0" expanded="false" />
+                <element signature="e#3414#3781#0" expanded="false" />
+                <element signature="e#3816#4183#0" expanded="false" />
+                <element signature="e#4230#4462#0" expanded="false" />
+                <element signature="e#4506#4885#0" expanded="false" />
+                <element signature="e#4922#5465#0" expanded="false" />
+                <element signature="e#5503#5948#0" expanded="false" />
+                <element signature="e#5983#6232#0" expanded="false" />
+                <element signature="e#6270#6483#0" expanded="false" />
+                <element signature="e#6519#6757#0" expanded="false" />
+                <element signature="e#6794#7173#0" expanded="false" />
+                <element signature="e#7211#7590#0" expanded="false" />
+                <element signature="e#7633#8012#0" expanded="false" />
+                <element signature="e#8054#8434#0" expanded="false" />
+                <element signature="e#8481#8861#0" expanded="false" />
+                <element signature="e#8901#9281#0" expanded="false" />
+                <element signature="e#9318#9861#0" expanded="false" />
+                <element signature="e#9951#9957#0" expanded="false" />
+                <element signature="e#14584#15028#0" expanded="false" />
+                <element signature="e#16786#17306#0" expanded="false" />
+                <element signature="e#20303#20315#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/QA/test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -104,12 +83,12 @@
       <file leaf-file-name="server.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="109" column="20" lean-forward="true" selection-start-line="109" selection-start-column="20" selection-end-line="110" selection-end-column="32" />
+            <state relative-caret-position="91">
+              <caret line="188" column="38" lean-forward="false" selection-start-line="188" selection-start-column="38" selection-end-line="188" selection-end-column="38" />
               <folding>
-                <marker date="1533473304893" expanded="true" signature="1404:1460" ph="SELECT `学校名称... allschool" />
-                <marker date="1533473304893" expanded="true" signature="2724:2776" ph="SELECT `属性`,... school" />
-                <marker date="1533473304893" expanded="true" signature="4216:4266" ph="SELECT `学校名`... 学校简称" />
+                <marker date="1533543076997" expanded="true" signature="1404:1460" ph="SELECT `学校名称... allschool" />
+                <marker date="1533543076997" expanded="true" signature="2675:2725" ph="SELECT `学校名`... 学校简称" />
+                <marker date="1533543076997" expanded="true" signature="3607:3659" ph="SELECT `属性`,... school" />
               </folding>
             </state>
           </provider>
@@ -154,8 +133,8 @@
       <find>清华大学</find>
       <find>ch-table</find>
       <find>get_html_baidu_soup</find>
-      <find>try</find>
       <find>get_html_baidu</find>
+      <find>try</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -202,9 +181,9 @@
         <option value="$PROJECT_DIR$/QA/Tools/TextProcess.py" />
         <option value="$PROJECT_DIR$/QA/Tools/xlsxToMysql.py" />
         <option value="$PROJECT_DIR$/QA/Tools/fenci.py" />
-        <option value="$PROJECT_DIR$/server.py" />
         <option value="$PROJECT_DIR$/QA/Tools/Html_Tools.py" />
         <option value="$PROJECT_DIR$/QA/test.py" />
+        <option value="$PROJECT_DIR$/server.py" />
         <option value="$PROJECT_DIR$/QA/QACrawler/search_summary.py" />
       </list>
     </option>
@@ -215,11 +194,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1932" />
-    <option name="height" value="1056" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="960" />
+    <option name="width" value="960" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -285,7 +263,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.search_summary">
+  <component name="RunManager" selected="Python.qa">
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -532,9 +510,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.search_summary" />
-        <item index="1" class="java.lang.String" itemvalue="Python.test" />
-        <item index="2" class="java.lang.String" itemvalue="Python.qa" />
+        <item index="0" class="java.lang.String" itemvalue="Python.qa" />
+        <item index="1" class="java.lang.String" itemvalue="Python.search_summary" />
+        <item index="2" class="java.lang.String" itemvalue="Python.test" />
         <item index="3" class="java.lang.String" itemvalue="Python.server" />
         <item index="4" class="java.lang.String" itemvalue="Python.xlsxToMysql" />
       </list>
@@ -659,7 +637,14 @@
       <option name="project" value="LOCAL" />
       <updated>1533044481956</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="完成意图分析">
+      <created>1533530229854</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1533530229854</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TodoView">
@@ -672,22 +657,22 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1932" height="1056" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32838982" sideWeight="0.5170576" order="13" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28207847" sideWeight="0.8307292" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36585367" sideWeight="0.8307292" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.4978678" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20390455" sideWeight="0.47441363" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.4936034" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15031315" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.103125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30752915" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30646873" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3286334" sideWeight="0.48294243" order="8" side_tool="false" content_ui="tabs" />
@@ -751,11 +736,19 @@
     <MESSAGE value="默认的" />
     <MESSAGE value="2018/7/9&#10;修复抓取mu越界问题&#10;修复h3不存在问题" />
     <MESSAGE value="2018/7/31&#10;同步" />
-    <option name="LAST_COMMIT_MESSAGE" value="2018/7/31&#10;同步" />
+    <MESSAGE value="完成意图分析" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成意图分析" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="62" />
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/QA/QACrawler/search_summary.py</url>
+          <line>358</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="68" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -850,18 +843,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="109" column="20" lean-forward="true" selection-start-line="109" selection-start-column="20" selection-end-line="110" selection-end-column="32" />
-          <folding>
-            <marker date="1533473304893" expanded="true" signature="1404:1460" ph="SELECT `学校名称... allschool" />
-            <marker date="1533473304893" expanded="true" signature="2724:2776" ph="SELECT `属性`,... school" />
-            <marker date="1533473304893" expanded="true" signature="4216:4266" ph="SELECT `学校名`... 学校简称" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/QA/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -873,50 +854,57 @@
     <entry file="file://$PROJECT_DIR$/QA/Tools/Html_Tools.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
-          <caret line="56" column="60" lean-forward="true" selection-start-line="56" selection-start-column="60" selection-end-line="56" selection-end-column="60" />
+          <caret line="56" column="60" lean-forward="false" selection-start-line="56" selection-start-column="60" selection-end-line="56" selection-end-column="60" />
           <folding>
             <element signature="e#42#71#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="188" column="38" lean-forward="false" selection-start-line="188" selection-start-column="38" selection-end-line="188" selection-end-column="38" />
+          <folding>
+            <marker date="1533543076997" expanded="true" signature="1404:1460" ph="SELECT `学校名称... allschool" />
+            <marker date="1533543076997" expanded="true" signature="2675:2725" ph="SELECT `学校名`... 学校简称" />
+            <marker date="1533543076997" expanded="true" signature="3607:3659" ph="SELECT `属性`,... school" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/QA/QACrawler/search_summary.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="368" column="5" lean-forward="true" selection-start-line="368" selection-start-column="5" selection-end-line="368" selection-end-column="5" />
+        <state relative-caret-position="181">
+          <caret line="551" column="38" lean-forward="true" selection-start-line="551" selection-start-column="38" selection-end-line="551" selection-end-column="38" />
           <folding>
             <element signature="e#14#25#0" expanded="true" />
-            <element signature="e#399#1027#0" expanded="false" />
-            <element signature="e#1066#1530#0" expanded="false" />
-            <element signature="e#1570#2051#0" expanded="false" />
-            <element signature="e#2089#2313#0" expanded="false" />
-            <element signature="e#2355#2984#0" expanded="false" />
-            <element signature="e#3025#3547#0" expanded="false" />
-            <element signature="e#3584#3979#0" expanded="false" />
-            <element signature="e#4014#4409#0" expanded="false" />
-            <element signature="e#4456#4716#0" expanded="false" />
-            <element signature="e#4760#5167#0" expanded="false" />
-            <element signature="e#5204#5775#0" expanded="false" />
-            <element signature="e#5813#6286#0" expanded="false" />
-            <element signature="e#6321#6598#0" expanded="false" />
-            <element signature="e#6634#6900#0" expanded="false" />
-            <element signature="e#6937#7344#0" expanded="false" />
-            <element signature="e#7382#7789#0" expanded="false" />
-            <element signature="e#7832#8239#0" expanded="false" />
-            <element signature="e#8281#8689#0" expanded="false" />
-            <element signature="e#8736#9144#0" expanded="false" />
-            <element signature="e#9184#9594#0" expanded="false" />
-            <element signature="e#9631#10202#0" expanded="false" />
-            <element signature="e#10935#10941#0" expanded="false" />
-            <element signature="e#12346#20701#0" expanded="false" />
-            <element signature="e#14882#15296#0" expanded="false" />
-            <element signature="e#15484#15928#0" expanded="false" />
-            <element signature="e#16056#16900#0" expanded="false" />
-            <element signature="e#17023#17478#0" expanded="false" />
-            <element signature="e#17686#18206#0" expanded="false" />
-            <element signature="e#18300#19571#0" expanded="false" />
-            <element signature="e#19632#20661#0" expanded="false" />
-            <element signature="e#21203#21215#0" expanded="false" />
+            <element signature="e#399#999#0" expanded="false" />
+            <element signature="e#1038#1474#0" expanded="false" />
+            <element signature="e#1514#1967#0" expanded="false" />
+            <element signature="e#2005#2201#0" expanded="false" />
+            <element signature="e#2243#2844#0" expanded="false" />
+            <element signature="e#2885#3377#0" expanded="false" />
+            <element signature="e#3414#3781#0" expanded="false" />
+            <element signature="e#3816#4183#0" expanded="false" />
+            <element signature="e#4230#4462#0" expanded="false" />
+            <element signature="e#4506#4885#0" expanded="false" />
+            <element signature="e#4922#5465#0" expanded="false" />
+            <element signature="e#5503#5948#0" expanded="false" />
+            <element signature="e#5983#6232#0" expanded="false" />
+            <element signature="e#6270#6483#0" expanded="false" />
+            <element signature="e#6519#6757#0" expanded="false" />
+            <element signature="e#6794#7173#0" expanded="false" />
+            <element signature="e#7211#7590#0" expanded="false" />
+            <element signature="e#7633#8012#0" expanded="false" />
+            <element signature="e#8054#8434#0" expanded="false" />
+            <element signature="e#8481#8861#0" expanded="false" />
+            <element signature="e#8901#9281#0" expanded="false" />
+            <element signature="e#9318#9861#0" expanded="false" />
+            <element signature="e#9951#9957#0" expanded="false" />
+            <element signature="e#14584#15028#0" expanded="false" />
+            <element signature="e#16786#17306#0" expanded="false" />
+            <element signature="e#20303#20315#0" expanded="false" />
           </folding>
         </state>
       </provider>

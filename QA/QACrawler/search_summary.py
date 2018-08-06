@@ -20,7 +20,6 @@ client = AipNlp(APP_ID, API_KEY, SECRET_KEY)
 '''
 def scoreline(schoolname,req):
     try:
-        schoolname = "清华大学"
         soup = To.get_html_baidu_selenium1(schoolname, req)
         soup = soup.find(id = "lqfs").find_all("tr")
         for i in soup:
@@ -36,7 +35,6 @@ def scoreline(schoolname,req):
 #分数线
 def canteen(schoolname,req):
     try:
-        schoolname = "清华大学"
         soup = To.get_html_baidu_selenium1(schoolname, req)
         soup = soup.find(class_ = "nav-container clearfix").find_all("a")
         for i in soup:
@@ -52,7 +50,6 @@ def canteen(schoolname,req):
 def dormitory(schoolname,req):
     try:
         url = ""
-        schoolname = "清华大学"
         soup = To.get_html_baidu_selenium1(schoolname, req)
         soup = soup.find(class_ = "nav-container clearfix").find_all("a")
         for i in soup:
@@ -67,7 +64,6 @@ def dormitory(schoolname,req):
 #宿舍
 def website(schoolname,req):
     try:
-        schoolname = "清华大学"
         soup = To.get_html_baidu_selenium1(schoolname, req)
         soup = soup.find(class_ = "mid").find(class_ = "msg").find("span").a
         return soup.text
@@ -77,7 +73,6 @@ def website(schoolname,req):
 def phonenumber(schoolname,req):
     try:
         url = ""
-        schoolname = "清华大学"
         soup = To.get_html_baidu_selenium1(schoolname, req)
         soup = soup.find(class_ = "nav-container clearfix").find_all("a")
         for i in soup:
@@ -96,7 +91,6 @@ def phonenumber(schoolname,req):
 def location(schoolname,req):
     try:
         url = ""
-        schoolname = "华东师范大学"
         soup = To.get_html_baidu_selenium1(schoolname, req)
         soup = soup.find(class_ = "nav-container clearfix").find_all("a")
         for i in soup:
@@ -111,7 +105,6 @@ def location(schoolname,req):
 #地址
 def charge(schoolname,req):
     try:
-        schoolname = "清华大学"
         soup = To.get_html_baidu_selenium1(schoolname, req)
         soup = soup.find(class_ = "nav-container clearfix").find("span").find("ul").find_all("li")
         soup = To.get_html_baidu("http://gaokao.chsi.com.cn" + (soup[2].a)["href"], req)
@@ -122,7 +115,6 @@ def charge(schoolname,req):
 #收费
 def work(schoolname,req):
     try:
-        schoolname = "清华大学"
         soup = To.get_html_baidu_selenium1(schoolname, req)
         soup = soup.find(class_ = "nav-container clearfix").find("span").find("ul").find_all("li")
         soup = To.get_html_baidu("http://gaokao.chsi.com.cn" + (soup[3].a)["href"], req)
@@ -133,7 +125,6 @@ def work(schoolname,req):
 #就业情况
 def schoolproperty(schoolname,req):
     try:
-        schoolname = "清华大学"
         soup = To.get_html_baidu_selenium1(schoolname, req)
         soup = soup.find(class_ = "zx-yx-baseinfo").find_all("span")
         return schoolname + "是一所" + soup[2].text[6:].encode("utf-8")
@@ -142,7 +133,6 @@ def schoolproperty(schoolname,req):
 #学校性质
 def englishname(schoolname,req):
     try:
-        schoolname = "清华大学"
         soup = To.get_html_baidu("https://baike.baidu.com/item/" + schoolname, req)
         soup1 = soup.find(class_ = "basic-info cmn-clearfix").find_all("dt")
         soup2 = soup.find(class_ = "basic-info cmn-clearfix").find_all("dd")
@@ -154,7 +144,6 @@ def englishname(schoolname,req):
 #英文名
 def major(schoolname,req):
     try:
-        schoolname = "上海大学"
         soup = To.get_html_baidu_selenium2(schoolname, req)
         soup = soup.find(class_ = "sm_nav bk").find_all("a")
         ans = schoolname + "的专业有："
@@ -171,7 +160,6 @@ def major(schoolname,req):
 #专业
 def college(schoolname,req):
     try:
-        schoolname = "清华大学"
         soup = To.get_html_baidu("https://baike.baidu.com/item/" + schoolname, req)
         soup = soup.find_all(class_ = "para-title level-3")
         for i in soup:
@@ -186,16 +174,22 @@ def college(schoolname,req):
 #学院
 def area(schoolname,req):
     try:
-        schoolname = "上海大学"
         soup = To.get_html_baidu("https://www.baidu.com/s?wd=" + schoolname + "占地", req)
         soup = soup.find(class_ = "op_exactqa_s_answer")
         return schoolname + "占地" + soup.text.strip().encode("utf-8")
     except:
         return ""
 #占地
+def zipcode(schoolname,req):
+    try:
+        soup = To.get_html_baidu("https://www.baidu.com/s?wd=" + schoolname + "邮编", req)
+        soup = soup.find(class_ = "op_post_content")
+        return soup.text.strip()[:6]
+    except:
+        return ""
+#邮编
 def email(schoolname,req):
     try:
-        schoolname = "北京大学"
         soup = To.get_html_baidu_selenium2(schoolname, req)
         soup = soup.find(class_ = "college_msg bk").find(class_ = "left contact")
         soup = soup.text.split()
@@ -205,7 +199,6 @@ def email(schoolname,req):
 #邮箱
 def master(schoolname,req):
     try:
-        schoolname = "清华大学"
         soup = To.get_html_baidu("https://baike.baidu.com/item/" + schoolname, req)
         soup1 = soup.find(class_ = "basic-info cmn-clearfix").find_all("dt")
         soup2 = soup.find(class_ = "basic-info cmn-clearfix").find_all("dd")
@@ -217,7 +210,6 @@ def master(schoolname,req):
 #硕士点
 def doctor(schoolname,req):
     try:
-        schoolname = "清华大学"
         soup = To.get_html_baidu("https://baike.baidu.com/item/" + schoolname, req)
         soup1 = soup.find(class_ = "basic-info cmn-clearfix").find_all("dt")
         soup2 = soup.find(class_ = "basic-info cmn-clearfix").find_all("dd")
@@ -229,7 +221,6 @@ def doctor(schoolname,req):
 #博士点
 def celebration(schoolname,req):
     try:
-        schoolname = "清华大学"
         soup = To.get_html_baidu("https://baike.baidu.com/item/" + schoolname, req)
         soup1 = soup.find(class_ = "basic-info cmn-clearfix").find_all("dt")
         soup2 = soup.find(class_ = "basic-info cmn-clearfix").find_all("dd")
@@ -241,7 +232,6 @@ def celebration(schoolname,req):
 #校庆日
 def schoolcode(schoolname,req):
     try:
-        schoolname = "上海大学"
         soup = To.get_html_baidu("https://baike.baidu.com/item/" + schoolname, req)
         soup1 = soup.find(class_ = "basic-info cmn-clearfix").find_all("dt")
         soup2 = soup.find(class_ = "basic-info cmn-clearfix").find_all("dd")
@@ -253,7 +243,6 @@ def schoolcode(schoolname,req):
 #学校代码
 def establish_time(schoolname,req):
     try:
-        schoolname = "复旦大学"
         soup = To.get_html_baidu("https://baike.baidu.com/item/" + schoolname, req)
         soup1 = soup.find(class_ = "basic-info cmn-clearfix").find_all("dt")
         soup2 = soup.find(class_ = "basic-info cmn-clearfix").find_all("dd")
@@ -265,7 +254,6 @@ def establish_time(schoolname,req):
 #创办时间
 def alumnus(schoolname,req):
     try:
-        schoolname = "上海海事大学"
         soup = To.get_html_baidu("https://baike.baidu.com/item/" + schoolname, req)
         soup1 = soup.find(class_ = "basic-info cmn-clearfix").find_all("dt")
         soup2 = soup.find(class_ = "basic-info cmn-clearfix").find_all("dd")
@@ -277,7 +265,6 @@ def alumnus(schoolname,req):
 #知名校友
 def team(schoolname,req):
     try:
-        schoolname = "北京大学"
         soup = To.get_html_baidu("https://baike.baidu.com/item/" + schoolname, req)
         soup = soup.find_all(class_ = "para-title level-3")
         for i in soup:
@@ -293,27 +280,6 @@ def team(schoolname,req):
     except:
         return ""
 #师资力量
-
-# def academic_resource(schoolname,req):
-#     try:
-#         schoolname = "上海师范大学"
-#         soup = To.get_html_baidu_soup("https://baike.baidu.com/item/" + schoolname, req)
-#         soup = soup.find_all(class_ = "para")
-#         for i in soup:
-#             if "馆藏资源" in i.text:
-#                 tmp = i.parent.parent.nextSibling
-#                 if tmp.find("div") != None:
-#                     tmp.div.clear()
-#                 tmp = tmp.text
-#                 if '[' in tmp and ']' in tmp:
-#                     tmp = tmp[:tmp.index('[')]
-#                 return tmp
-#         return ""
-#     except:
-#         return ""
-# #学术资源
-
-
 
 def kwquery(query,intention,schoolname):
     #分词 去停用词 抽取关键词
@@ -365,10 +331,12 @@ def kwquery(query,intention,schoolname):
         '创办时间': establish_time,
         '学校代码': schoolcode,
         '师资力量': team,
-        '学术资源': dormitory,
-        '科研成果': dormitory,
     }
-    return dic["宿舍"](schoolname, req)
+
+    if intention != "" and schoolname != "":
+        if dic[intention](schoolname, req) != "":
+            answer.append(dic[intention](schoolname, req))
+            flag = 1
 
     # 抓取百度前10条的摘要
     soup_baidu = To.get_html_baidu('https://www.baidu.com/s?wd='+quote(query),req)
@@ -728,8 +696,6 @@ if __name__ == '__main__':
     pass
     query1 = "北大在哪里？"
     query2 = "上海交大的具体位置？"
-    print kwquery(query1, "", "")
-
 
     # ans = client.simnet(query1,query2)
     # print ans.get("score")
