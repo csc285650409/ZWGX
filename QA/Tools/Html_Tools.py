@@ -4,6 +4,7 @@
 # import re
 from bs4 import BeautifulSoup
 import requests
+from selenium import webdriver
 
 class Session:
     def __init__(self):
@@ -52,12 +53,29 @@ def get_html_bingwd(url,req):
 '''
 def get_html_baidu(url,req):
     soup = BeautifulSoup(req.session.get(url=url, headers=req.headers).content, "lxml")
-
     # 去除无关的标签
     # [s.extract() for s in soup(['script', 'style','img'])]
     [s.extract() for s in soup(['style', 'img'])]
     # print(soup.prettify())
     return soup
+
+def get_html_baidu_selenium1(schoolname,req):
+    driver = webdriver.Chrome("C:\Program Files (x86)\Google\Chrome\Application\chromedriver")
+    driver.get("https://gaokao.chsi.com.cn/sch/search.do?searchType=1&yxmc="+schoolname)
+    soup = BeautifulSoup(driver.page_source,'lxml')
+    soup = soup.find(class_="js-yxk-yxmc").find("a")["href"]
+    soup = get_html_baidu("https://gaokao.chsi.com.cn" + soup,req)
+    return soup
+
+def get_html_baidu_selenium2(schoolname,req):
+    driver = webdriver.Chrome("C:\Program Files (x86)\Google\Chrome\Application\chromedriver")
+    driver.get("http://college.gaokao.com/schlist/n"+schoolname)
+    soup = BeautifulSoup(driver.page_source,'lxml')
+    soup = soup.find(class_="scores_List").find("dt").find("a")["href"]
+    soup = get_html_baidu(soup,req)
+    return soup
+
+
 
 
 '''

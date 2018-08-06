@@ -46,7 +46,9 @@ def FindSchool(dbip,dbusername,dbpassword,dbname,word):
     # 获取所有记录列表
     results = cursor.fetchall()
     if len(results) > 0:
-        print(word)
+        return word
+    else:
+        return ""
 
 def QA(input_message,mybot):
     findAns = False
@@ -57,6 +59,8 @@ def QA(input_message,mybot):
     dbport=3306#数据库端口
     dbusername='root'#数据库用户名
     dbpassword='zwgx'#数据库密码root
+    schoolname = ''
+    intention = ''
     if len(input_message) > 60:
         reply = mybot.respond("句子长度过长")
         findAns = True
@@ -105,6 +109,7 @@ def QA(input_message,mybot):
                         db.close()
                     except Exception as e:
                         print(e)
+
                 if w.flag=='school':
                     try:
                         db = pymysql.connect(host=dbip, user=dbusername, passwd=dbpassword, db=dbname, charset="utf8")
@@ -159,7 +164,15 @@ def QA(input_message,mybot):
                 # # 匹配不到模版，通用查询
                 # elif response.__contains__("NoMatchingTemplate"):
                 #     print "NoMatchingTemplate"
-                ans = search_summary.kwquery(input_message)
+                schoolname = FindSchool(dbip, dbusername, dbpassword, dbname, w.word)
+                if (schoolname != ""):
+                    sock = socket(AF_INET, SOCK_STREAM)
+                    sock.connect(('127.0.0.1', 50009))
+                    sock.sendall(input_message.encode("utf-8"))
+                    intention = sock.recv(1024)
+                    sock.close()
+                    print intention
+                ans = search_summary.kwquery(input_message,intention,schoolname)
 #*********************************************************************************
                 if (findAns == False):
                     if len(ans) == 0:
