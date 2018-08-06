@@ -96,7 +96,7 @@ def ExceltoMySQL(excelpath,dbname,):
 # ExceltoMySQL(dbname=dbname,excelpath=excelpath)
 if(__name__=='__main__'):
     # excelpath = input("输入文件地址")
-    excelpath = r"C:\Users\Administrator\Desktop\allschool.xlsx"
+    excelpath = r"C:\Users\csc88\Documents\WeChat Files\wxid_crut25q7oe6g21\Files\ss.xlsx"
     # dbname=input("输入数据库名")
     dbname='zwgx'
     ExceltoMySQL(dbname=dbname,excelpath=excelpath)
