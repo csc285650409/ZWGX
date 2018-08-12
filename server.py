@@ -46,7 +46,9 @@ def FindSchool(dbip,dbusername,dbpassword,dbname,word):
     # 获取所有记录列表
     results = cursor.fetchall()
     if len(results) > 0:
-        print(word)
+        return word
+    else:
+        return ""
 
 def QA(input_message,mybot):
     findAns = False
@@ -57,6 +59,8 @@ def QA(input_message,mybot):
     dbport=3306#数据库端口
     dbusername='root'#数据库用户名
     dbpassword='zwgx'#数据库密码root
+    schoolname = ''
+    intention = ''
     if len(input_message) > 60:
         reply = mybot.respond("句子长度过长")
         findAns = True
@@ -76,7 +80,24 @@ def QA(input_message,mybot):
             words = T.postag(input_message)
             for w in words:
                 print w.word, w.flag
-
+                if w.flag=='school':
+                    try:
+                        db = pymysql.connect(host=dbip, user=dbusername, passwd=dbpassword, db=dbname, charset="utf8")
+                        cursor = db.cursor()
+                        sql = u"SELECT `学校名` FROM 学校简称 WHERE `简称`='" + w.word + "'"
+                        # 执行SQL语句
+                        cursor.execute(sql)
+                        # 获取所有记录列表
+                        results = cursor.fetchall()
+                        #替换简称
+                        if len(results) > 0:
+                            input_message=input_message.replace(w.word,results[0][0]).__str__()
+                            w.flag = 'nt'
+                            w.word = results[0][0]
+                        # 关闭数据库连接
+                        db.close()
+                    except Exception as e:
+                        print(e)
                 # 识别学校简称并配对数据库中已存内容
                 if w.flag == 'x' or w.flag == 'nt':
                     try:
@@ -105,22 +126,11 @@ def QA(input_message,mybot):
                         db.close()
                     except Exception as e:
                         print(e)
-                if w.flag=='school':
-                    try:
-                        db = pymysql.connect(host=dbip, user=dbusername, passwd=dbpassword, db=dbname, charset="utf8")
-                        cursor = db.cursor()
-                        sql = u"SELECT `学校名` FROM 学校简称 WHERE `简称`='" + w.word + "'"
-                        # 执行SQL语句
-                        cursor.execute(sql)
-                        # 获取所有记录列表
-                        results = cursor.fetchall()
-                        #替换简称
-                        if len(results) > 0:
-                            input_message=input_message.replace(w.word,results[0][0]).__str__()
-                        # 关闭数据库连接
-                        db.close()
-                    except Exception as e:
-                        print(e)
+                if FindSchool(dbip, dbusername, dbpassword, dbname, w.word) != "":
+                    schoolname = FindSchool(dbip, dbusername, dbpassword, dbname, w.word)
+
+
+
             response = mybot.respond(input_message.strip())
 
             print "======="
@@ -159,7 +169,15 @@ def QA(input_message,mybot):
                 # # 匹配不到模版，通用查询
                 # elif response.__contains__("NoMatchingTemplate"):
                 #     print "NoMatchingTemplate"
-                ans = search_summary.kwquery(input_message)
+
+                if (schoolname != ""):
+                    sock = socket(AF_INET, SOCK_STREAM)
+                    sock.connect(('127.0.0.1', 50009))
+                    sock.sendall(input_message.encode("utf-8"))
+                    intention = sock.recv(1024)
+                    sock.close()
+                    print intention
+                ans = search_summary.kwquery(input_message,intention,schoolname)
 #*********************************************************************************
                 if (findAns == False):
                     if len(ans) == 0:
@@ -167,7 +185,6 @@ def QA(input_message,mybot):
                         print 'Frank：' + ans
                         reply = ans
                         findAns = True
-
                     elif len(ans) > 1:
                         print "不确定候选答案"
                         print 'Frank: '
