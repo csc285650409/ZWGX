@@ -5,6 +5,8 @@ from urllib import quote
 from aip import AipNlp
 from QA.Tools import Html_Tools as To
 from QA.Tools import TextProcess as T
+import pingjia as pj
+import random
 
 # import pynlpir
 
@@ -306,6 +308,11 @@ def kwquery(query,intention,schoolname):
     req=To.Session()
     # req.session.cookies.clear()
     answer = []
+    answerdict = {}
+    answerdict["schoolname"]=""
+    answerdict["intention"]=""
+    answerdict["index"]=-1
+
     text = ''
     # 找到答案就置1
     flag = 0
@@ -336,19 +343,57 @@ def kwquery(query,intention,schoolname):
     }
     #switch语句
     if intention != "" and schoolname != "":
-        if dic[intention](schoolname, req) != "":
-            answer.append(dic[intention](schoolname, req))
-            flag = 1
+
+        pachong=False
+        try:
+            # 先进行查询
+            sql = u"SELECT `内容`,`序号` FROM `问答预存` WHERE `学校名`='" + schoolname + "' AND `意图`='" + intention + "'ORDER BY `均分` DESC"
+            SQLresults=pj.EXSQL(sql)
+            #没有进行定向爬取
+            if len(SQLresults) == 0:
+                answerdict['index'] = 1
+                pachong=True
+            else:
+                #如有 则进行概率选择
+                dangwei=random.randint(1,10)
+                if(dangwei<=4):
+                    dangwei=1
+                elif(dangwei==10):
+                    dangwei=4
+                elif(dangwei>=5 and dangwei<=7):
+                    dangwei=2
+                else:
+                    dangwei=3
+                print("档位:"+dangwei.__str__())
+                #添加交互信息
+                if(dangwei==4):
+                    answerdict['index'] =4
+                if(dangwei<=3):
+                    answerdict['index'] =SQLresults[dangwei - 1][1]
+                    answer.append(SQLresults[dangwei - 1][0])
+                    flag=1
+        except Exception as e:
+            print(e)
+
+        if intention != "学术资源" and intention != "科研成果":
+            if pachong:
+                yitupaqu=dic[intention](schoolname, req)
+                if  yitupaqu!= "":
+                    answer.append(yitupaqu)
+                    pj.InitSchool(schoolname,intention,yitupaqu)
+                    flag = 1
+    if flag==1:
+        print("before search")
 
     # 抓取百度前10条的摘要
     soup_baidu = To.get_html_baidu('https://www.baidu.com/s?wd='+quote(query),req)
     #判断是否有两个id为1的页面
     for i in range(1, 10):
+        if flag==1:
+            break
         if soup_baidu == None:
             break
         resultsS = soup_baidu.find_all(id = i)
-        if flag==1:
-            break
         for results in resultsS:
             if results == None:
                 # print "百度摘要找不到答案"
@@ -553,14 +598,18 @@ def kwquery(query,intention,schoolname):
 
             text += results.get_text()
 
+
+    answerdict['schoolname'] = schoolname
+    answerdict['intention'] = intention
     if flag == 1:
-        return answer
+        answerdict['answer'] = answer
+        return answerdict
     else:
         for i in range(1,10):
             results = soup_baidu.find(id = i)
-            # if(results == None):
-            #     answer.append(u"很抱歉，这个我也母鸡啊！")
-            # else:
+            if(results == None):
+                answer.append(u"很抱歉，网络可能出现异常！")
+                break
             r = results.find(class_ = "c-abstract")
             if r==None:
                 continue
@@ -569,7 +618,9 @@ def kwquery(query,intention,schoolname):
                 answer.append(r.get_text())
                 break
     del req
-    return answer
+
+    answerdict['answer'] = answer
+    return answerdict
     # #获取bing的摘要
     # soup_bing = To.get_html_bing('https://www.bing.com/search?q='+quote(query),req)
     # # 判断是否在Bing的知识图谱中

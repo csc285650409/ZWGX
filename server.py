@@ -126,6 +126,7 @@ def QA(input_message,mybot):
                         db.close()
                     except Exception as e:
                         print(e)
+                #todo： 每个词去找查数据库可以优化一下 加一下词性判断
                 if FindSchool(dbip, dbusername, dbpassword, dbname, w.word) != "":
                     schoolname = FindSchool(dbip, dbusername, dbpassword, dbname, w.word)
 
@@ -177,7 +178,11 @@ def QA(input_message,mybot):
                     intention = sock.recv(1024)
                     sock.close()
                     print intention
-                ans = search_summary.kwquery(input_message,intention,schoolname)
+                TempDict = search_summary.kwquery(input_message,intention,schoolname)
+                ansdict['schoolname']=TempDict['schoolname']
+                ansdict['intention']=TempDict['intention']
+                ansdict['index']=TempDict['index']
+                ans=TempDict['answer']
 #*********************************************************************************
                 if (findAns == False):
                     if len(ans) == 0:
