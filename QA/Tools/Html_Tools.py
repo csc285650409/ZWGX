@@ -60,19 +60,27 @@ def get_html_baidu(url,req):
     return soup
 
 def get_html_baidu_selenium1(schoolname,req):
-    driver = webdriver.Chrome("C:\Program Files (x86)\Google\Chrome\Application\chromedriver")
+    #window版本
+    # driver = webdriver.Chrome("C:\Program Files (x86)\Google\Chrome\Application\chromedriver")
+    #linux版本
+    driver = webdriver.Chrome()
     driver.get("https://gaokao.chsi.com.cn/sch/search.do?searchType=1&yxmc="+schoolname)
     soup = BeautifulSoup(driver.page_source,'lxml')
     soup = soup.find(class_="js-yxk-yxmc").find("a")["href"]
     soup = get_html_baidu("https://gaokao.chsi.com.cn" + soup,req)
+    driver.quit()
     return soup
 
 def get_html_baidu_selenium2(schoolname,req):
-    driver = webdriver.Chrome("C:\Program Files (x86)\Google\Chrome\Application\chromedriver")
+    # window版本
+    # driver = webdriver.Chrome("C:\Program Files (x86)\Google\Chrome\Application\chromedriver")
+    # linux版本
+    driver = webdriver.Chrome()
     driver.get("http://college.gaokao.com/schlist/n"+schoolname)
     soup = BeautifulSoup(driver.page_source,'lxml')
     soup = soup.find(class_="scores_List").find("dt").find("a")["href"]
     soup = get_html_baidu(soup,req)
+    driver.quit()
     return soup
 
 
