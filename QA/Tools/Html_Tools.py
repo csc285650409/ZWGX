@@ -61,9 +61,14 @@ def get_html_baidu(url,req):
 
 def get_html_baidu_selenium1(schoolname,req):
     #window版本
-    # driver = webdriver.Chrome("C:\Program Files (x86)\Google\Chrome\Application\chromedriver")
+    driver = webdriver.Chrome("C:\Program Files (x86)\Google\Chrome\Application\chromedriver")
     #linux版本
-    driver = webdriver.Chrome()
+    chrome_options = webdriver.ChromeOptions()
+    chrome_options.add_argument('--headless')
+    chrome_options.add_argument('--disable-gpu')
+    chrome_options.add_argument("user-agent='Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'")
+    driver = webdriver.Chrome(chrome_options=chrome_options)
+    #######
     driver.get("https://gaokao.chsi.com.cn/sch/search.do?searchType=1&yxmc="+schoolname)
     soup = BeautifulSoup(driver.page_source,'lxml')
     soup = soup.find(class_="js-yxk-yxmc").find("a")["href"]
@@ -73,9 +78,14 @@ def get_html_baidu_selenium1(schoolname,req):
 
 def get_html_baidu_selenium2(schoolname,req):
     # window版本
-    # driver = webdriver.Chrome("C:\Program Files (x86)\Google\Chrome\Application\chromedriver")
+    driver = webdriver.Chrome("C:\Program Files (x86)\Google\Chrome\Application\chromedriver")
     # linux版本
-    driver = webdriver.Chrome()
+    # chrome_options = webdriver.ChromeOptions()
+    # chrome_options.add_argument('--headless')
+    # chrome_options.add_argument('--disable-gpu')
+    # chrome_options.add_argument("user-agent='Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'")
+    # driver = webdriver.Chrome(chrome_options=chrome_options)
+    ########
     driver.get("http://college.gaokao.com/schlist/n"+schoolname)
     soup = BeautifulSoup(driver.page_source,'lxml')
     soup = soup.find(class_="scores_List").find("dt").find("a")["href"]

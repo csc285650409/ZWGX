@@ -32,7 +32,8 @@ def scoreline(schoolname,req):
                 else:
                     return schoolname + tmp[0].text.encode("utf8") + "年" + tmp[1].text.encode("utf8") + "的省市分数线是" + tmp[2].text.encode("utf8") + ",录取平均分是" + tmp[3].text.encode("utf8")
         return ""
-    except:
+    except Exception as ex:
+        print(ex)
         return ""
 #分数线
 def canteen(schoolname,req):
@@ -46,7 +47,8 @@ def canteen(schoolname,req):
         soup = To.get_html_baidu("http://gaokao.chsi.com.cn" + url, req)
         soup = soup.find_all(class_ = "yxk-detail-con")
         return soup[1].text
-    except:
+    except Exception as ex:
+        print(ex)
         return ""
 #食堂
 def dormitory(schoolname,req):
@@ -61,7 +63,8 @@ def dormitory(schoolname,req):
         soup = To.get_html_baidu("http://gaokao.chsi.com.cn" + url, req)
         soup = soup.find_all(class_ = "yxk-detail-con")
         return soup[0].text
-    except:
+    except Exception as ex:
+        print(ex)
         return ""
 #宿舍
 def website(schoolname,req):
@@ -69,7 +72,8 @@ def website(schoolname,req):
         soup = To.get_html_baidu_selenium1(schoolname, req)
         soup = soup.find(class_ = "mid").find(class_ = "msg").find("span").a
         return soup.text
-    except:
+    except Exception as ex:
+        print(ex)
         return ""
 #官网
 def phonenumber(schoolname,req):
@@ -87,7 +91,8 @@ def phonenumber(schoolname,req):
             return ""
         else:
             return "联系电话是" + soup[len(soup) - 1].text.encode("utf-8")
-    except:
+    except Exception as ex:
+        print(ex)
         return ""
 #招办电话
 def location(schoolname,req):
@@ -102,7 +107,8 @@ def location(schoolname,req):
         soup = To.get_html_baidu("http://gaokao.chsi.com.cn" + url, req)
         soup = soup.find(class_ = "container").find_all(class_ = "yxk-detail-con")
         return soup[len(soup) - 2].text
-    except:
+    except Exception as ex:
+        print(ex)
         return ""
 #地址
 def charge(schoolname,req):
@@ -112,7 +118,8 @@ def charge(schoolname,req):
         soup = To.get_html_baidu("http://gaokao.chsi.com.cn" + (soup[2].a)["href"], req)
         soup = soup.find(class_ = "yxk-detail-con")
         return soup.text.strip()
-    except:
+    except Exception as ex:
+        print(ex)
         return ""
 #收费
 def work(schoolname,req):
@@ -122,7 +129,8 @@ def work(schoolname,req):
         soup = To.get_html_baidu("http://gaokao.chsi.com.cn" + (soup[3].a)["href"], req)
         soup = soup.find(class_ = "yxk-detail-con")
         return soup.text.strip()
-    except:
+    except Exception as ex:
+        print(ex)
         return ""
 #就业情况
 def schoolproperty(schoolname,req):
@@ -132,7 +140,8 @@ def schoolproperty(schoolname,req):
         if '[' in soup and ']' in soup:
             soup = soup[:soup.index('[')]
         return soup
-    except:
+    except Exception as ex:
+        print(ex)
         return ""
 #学校性质
 def englishname(schoolname,req):
@@ -143,7 +152,8 @@ def englishname(schoolname,req):
         for i in soup1:
             if i.text == u"外文名":
                 return soup2[soup1.index(i)].text
-    except:
+    except Exception as ex:
+        print(ex)
         return ""
 #英文名
 def major(schoolname,req):
@@ -159,7 +169,8 @@ def major(schoolname,req):
                     ans += t.text.replace('|', '').strip().encode("utf-8") + '，'
                 return ans.strip('，')
         return ""
-    except:
+    except Exception as ex:
+        print(ex)
         return ""
 #专业
 def college(schoolname,req):
@@ -173,7 +184,8 @@ def college(schoolname,req):
                     tmp = tmp[:tmp.index('[')]
                 return tmp
         return ""
-    except:
+    except Exception as ex:
+        print(ex)
         return ""
 #学院
 def area(schoolname,req):
@@ -181,7 +193,8 @@ def area(schoolname,req):
         soup = To.get_html_baidu("https://www.baidu.com/s?wd=" + schoolname + "占地", req)
         soup = soup.find(class_ = "op_exactqa_s_answer")
         return schoolname + "占地" + soup.text.strip().encode("utf-8")
-    except:
+    except Exception as ex:
+        print(ex)
         return ""
 #占地
 def zipcode(schoolname,req):
@@ -189,7 +202,8 @@ def zipcode(schoolname,req):
         soup = To.get_html_baidu("https://www.baidu.com/s?wd=" + schoolname + "邮编", req)
         soup = soup.find(class_ = "op_post_content")
         return soup.text.strip()[:6]
-    except:
+    except Exception as ex:
+        print(ex)
         return ""
 #邮编
 def email(schoolname,req):
@@ -198,7 +212,8 @@ def email(schoolname,req):
         soup = soup.find(class_ = "college_msg bk").find(class_ = "left contact")
         soup = soup.text.split()
         return (soup[2])[5:]
-    except:
+    except Exception as ex:
+        print(ex)
         return ""
 #邮箱
 def master(schoolname,req):
@@ -209,7 +224,8 @@ def master(schoolname,req):
         for i in soup1:
             if i.text == u"硕士点":
                 return soup2[soup1.index(i)].text
-    except:
+    except Exception as ex:
+        print(ex)
         return ""
 #硕士点
 def doctor(schoolname,req):
@@ -220,7 +236,8 @@ def doctor(schoolname,req):
         for i in soup1:
             if i.text == u"博士点":
                 return soup2[soup1.index(i)].text
-    except:
+    except Exception as ex:
+        print(ex)
         return ""
 #博士点
 def celebration(schoolname,req):
@@ -231,7 +248,8 @@ def celebration(schoolname,req):
         for i in soup1:
             if i.text == u"校庆日":
                 return soup2[soup1.index(i)].text
-    except:
+    except Exception as ex:
+        print(ex)
         return ""
 #校庆日
 def schoolcode(schoolname,req):
@@ -242,7 +260,8 @@ def schoolcode(schoolname,req):
         for i in soup1:
             if i.text == u"院校代码":
                 return soup2[soup1.index(i)].text
-    except:
+    except Exception as ex:
+        print(ex)
         return ""
 #学校代码
 def establish_time(schoolname,req):
@@ -253,7 +272,8 @@ def establish_time(schoolname,req):
         for i in soup1:
             if i.text == u"创办时间":
                 return soup2[soup1.index(i)].text
-    except:
+    except Exception as ex:
+        print(ex)
         return ""
 #创办时间
 def alumnus(schoolname,req):
@@ -264,7 +284,8 @@ def alumnus(schoolname,req):
         for i in soup1:
             if i.text == u"知名校友":
                 return soup2[soup1.index(i)].text
-    except:
+    except Exception as ex:
+        print(ex)
         return ""
 #知名校友
 def team(schoolname,req):
@@ -281,7 +302,8 @@ def team(schoolname,req):
                     tmp = tmp[:tmp.index('[')]
                 return tmp[:len(tmp)-1]
         return ""
-    except:
+    except Exception as ex:
+        print(ex)
         return ""
 #师资力量
 
