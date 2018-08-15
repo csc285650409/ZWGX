@@ -12,6 +12,16 @@ class Session:
     # session = requests.session()
     headers={'User-Agent':'Mozilla/5.0 (X11; U; Linux i686)Gecko/20071127 Firefox/2.0.0.11'}
 '''
+获取百度首条的页面
+'''
+def get_html_baidufirst(url,req):
+    soup = BeautifulSoup(req.session.get(url=url, headers=req.headers).content, "lxml")
+
+    # 去除无关的标签
+    [s.extract() for s in soup(['script', 'style','img','a'])]
+    # print(soup.prettify())
+    return soup
+'''
 获取百度知道的页面
 '''
 def get_html_zhidao(url,req):
@@ -63,11 +73,11 @@ def get_html_baidu_selenium1(schoolname,req):
     #window版本
     driver = webdriver.Chrome("C:\Program Files (x86)\Google\Chrome\Application\chromedriver")
     #linux版本
-    chrome_options = webdriver.ChromeOptions()
-    chrome_options.add_argument('--headless')
-    chrome_options.add_argument('--disable-gpu')
-    chrome_options.add_argument("user-agent='Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'")
-    driver = webdriver.Chrome(chrome_options=chrome_options)
+    # chrome_options = webdriver.ChromeOptions()
+    # chrome_options.add_argument('--headless')
+    # chrome_options.add_argument('--disable-gpu')
+    # chrome_options.add_argument("user-agent='Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'")
+    # driver = webdriver.Chrome(chrome_options=chrome_options)
     #######
     driver.get("https://gaokao.chsi.com.cn/sch/search.do?searchType=1&yxmc="+schoolname)
     soup = BeautifulSoup(driver.page_source,'lxml')

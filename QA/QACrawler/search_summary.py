@@ -90,7 +90,7 @@ def phonenumber(schoolname,req):
         if soup[len(soup) - 1].text == "":
             return ""
         else:
-            return "联系电话是" + soup[len(soup) - 1].text.encode("utf-8")
+            return soup[len(soup) - 1].text.encode("utf-8")
     except Exception as ex:
         print(ex)
         return ""
@@ -160,7 +160,7 @@ def major(schoolname,req):
     try:
         soup = To.get_html_baidu_selenium2(schoolname, req)
         soup = soup.find(class_ = "sm_nav bk").find_all("a")
-        ans = schoolname + "的专业有："
+        ans = ""
         for i in soup:
             if i.text == u"专业介绍":
                 soup = To.get_html_baidu(i["href"], req)
@@ -192,7 +192,7 @@ def area(schoolname,req):
     try:
         soup = To.get_html_baidu("https://www.baidu.com/s?wd=" + schoolname + "占地", req)
         soup = soup.find(class_ = "op_exactqa_s_answer")
-        return schoolname + "占地" + soup.text.strip().encode("utf-8")
+        return soup.text.strip().encode("utf-8")
     except Exception as ex:
         print(ex)
         return ""
@@ -380,7 +380,7 @@ def kwquery(query,intention,schoolname):
                 dangwei=random.randint(1,10)
                 if(dangwei<=4):
                     dangwei=1
-                elif(dangwei==10):
+                elif(dangwei>=9):
                     dangwei=4
                 elif(dangwei>=5 and dangwei<=7):
                     dangwei=2
@@ -632,6 +632,30 @@ def kwquery(query,intention,schoolname):
             if(results == None):
                 answer.append(u"很抱歉，网络可能出现异常！")
                 break
+
+            ########
+            url = results.find("h3").find("a")['href']
+            if url == None:
+                # print "百度知道找不到答案"
+                continue
+            else:
+                # print "百度知道找到答案"
+                zhidao_soup = To.get_html_baidufirst(url, req)
+
+                r = zhidao_soup.findAll("p")
+                if r == None:
+                    continue
+                else:
+                    for txt in r:
+                        t=txt.get_text().strip()
+                        if t!="":
+                            answer.append(txt.get_text().strip())
+                            if answer.__len__()>=10:
+                                break
+                    if answer.__len__()>=1:
+                        break
+            #########
+
             r = results.find(class_ = "c-abstract")
             if r==None:
                 continue
@@ -639,6 +663,7 @@ def kwquery(query,intention,schoolname):
                 [s.extract() for s in r(['span'])]
                 answer.append(r.get_text())
                 break
+
     del req
 
     answerdict['answer'] = answer
