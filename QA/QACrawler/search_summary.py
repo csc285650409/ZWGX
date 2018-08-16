@@ -397,13 +397,12 @@ def kwquery(query,intention,schoolname):
         except Exception as e:
             print(e)
 
-        if intention != "学术资源" and intention != "科研成果":
-            if pachong:
-                yitupaqu=dic[intention](schoolname, req)
-                if  yitupaqu!= "":
-                    answer.append(yitupaqu)
-                    pj.InitSchool(schoolname,intention,yitupaqu)
-                    flag = 1
+        if pachong:
+            yitupaqu=dic[intention](schoolname, req).strip()
+            if  yitupaqu!= "":
+                answer.append(yitupaqu)
+                pj.InitSchool(schoolname,intention,yitupaqu)
+                flag = 1
     if flag==1:
         print("before search")
 
@@ -650,19 +649,19 @@ def kwquery(query,intention,schoolname):
                         t=txt.get_text().strip()
                         if t!="":
                             answer.append(txt.get_text().strip())
-                            if answer.__len__()>=10:
+                            if answer.__len__()>=20:
                                 break
-                    if answer.__len__()>=1:
+                    if answer.__len__()>=3:
                         break
             #########
 
-            r = results.find(class_ = "c-abstract")
-            if r==None:
-                continue
-            else:
-                [s.extract() for s in r(['span'])]
-                answer.append(r.get_text())
-                break
+            # r = results.find(class_ = "c-abstract")
+            # if r==None:
+            #     continue
+            # else:
+            #     [s.extract() for s in r(['span'])]
+            #     answer.append(r.get_text())
+            #     break
 
     del req
 

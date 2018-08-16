@@ -178,29 +178,34 @@ def QA(input_message,mybot):
                     intention = sock.recv(1024)
                     sock.close()
                     print intention
-                TempDict = search_summary.kwquery(input_message,intention,schoolname)
-                ansdict['schoolname']=TempDict['schoolname']
-                ansdict['intention']=TempDict['intention']
-                ansdict['index']=TempDict['index']
-                ans=TempDict['answer']
-#*********************************************************************************
-                if (findAns == False):
-                    if len(ans) == 0:
-                        ans = mybot.respond('找不到答案')
-                        print 'Frank：' + ans
-                        reply = ans
-                        findAns = True
-                    elif len(ans) > 1:
-                        print "不确定候选答案"
-                        print 'Frank: '
-                        for a in ans:
-                            print a.encode("utf8")
-                            reply += a.encode("utf8") + '\n'
-                        findAns = True
-                    else:
-                        print 'Frank：' + ans[0].encode("utf8")
-                        reply = ans[0].encode("utf8")
-                        findAns = True
+
+                if unicode(intention) in ansdict:
+                    reply = ansdict[unicode(intention)]
+                    print 'Frank：' + reply.encode("utf8")
+                else:
+                    TempDict = search_summary.kwquery(input_message,intention,schoolname)
+                    ansdict['schoolname']=TempDict['schoolname']
+                    ansdict['intention']=TempDict['intention']
+                    ansdict['index']=TempDict['index']
+                    ans=TempDict['answer']
+    #*********************************************************************************
+                    if (findAns == False):
+                        if len(ans) == 0:
+                            ans = mybot.respond('找不到答案')
+                            print 'Frank：' + ans
+                            reply = ans
+                            findAns = True
+                        elif len(ans) > 1:
+                            print "不确定候选答案"
+                            print 'Frank: '
+                            for a in ans:
+                                print a.encode("utf8")
+                                reply += a.encode("utf8") + '\n'
+                            findAns = True
+                        else:
+                            print 'Frank：' + ans[0].encode("utf8")
+                            reply = ans[0].encode("utf8")
+                            findAns = True
 
             # 匹配模版
             else:
