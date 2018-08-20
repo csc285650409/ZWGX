@@ -1,8 +1,6 @@
 #-*- coding: utf-8 -*-
-
-def display():
-	print("123")
-dic = {1:"1",2:display,3:"3"}
-
-if __name__ == '__main__':
-	print dic[2]()
+import time
+timer = time.clock
+timer.start()
+if(timer == 5):
+	timer.stop()

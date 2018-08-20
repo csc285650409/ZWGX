@@ -133,7 +133,7 @@ def work(schoolname,req):
         print(ex)
         return ""
 #就业情况
-def schoolproperty(schoolname,req):
+def intro(schoolname,req):
     try:
         soup = To.get_html_baidu("https://baike.baidu.com/item/" + schoolname, req)
         soup = soup.find(class_ = "lemma-summary").find("div").text
@@ -143,7 +143,7 @@ def schoolproperty(schoolname,req):
     except Exception as ex:
         print(ex)
         return ""
-#学校性质
+#学校简介
 def englishname(schoolname,req):
     try:
         soup = To.get_html_baidu("https://baike.baidu.com/item/" + schoolname, req)
@@ -306,6 +306,18 @@ def team(schoolname,req):
         print(ex)
         return ""
 #师资力量
+def schoolproperty(schoolname,req):
+    try:
+        soup = To.get_html_baidu("https://baike.baidu.com/item/" + schoolname, req)
+        soup1 = soup.find(class_ = "basic-info cmn-clearfix").find_all("dt")
+        soup2 = soup.find(class_ = "basic-info cmn-clearfix").find_all("dd")
+        for i in soup1:
+            if i.text == u"属性":
+                return soup2[soup1.index(i)].text
+    except Exception as ex:
+        print(ex)
+        return ""
+#学校性质
 
 def kwquery(query,intention,schoolname):
     #分词 去停用词 抽取关键词
@@ -362,6 +374,7 @@ def kwquery(query,intention,schoolname):
         '创办时间': establish_time,
         '学校代码': schoolcode,
         '师资力量': team,
+        '学校简介':intro,
     }
     #switch语句
     if intention != "" and schoolname != "":
@@ -397,12 +410,13 @@ def kwquery(query,intention,schoolname):
         except Exception as e:
             print(e)
 
-        if pachong:
-            yitupaqu=dic[intention](schoolname, req).strip()
-            if  yitupaqu!= "":
-                answer.append(yitupaqu)
-                pj.InitSchool(schoolname,intention,yitupaqu)
-                flag = 1
+        if intention != "其他":
+            if pachong:
+                yitupaqu=dic[intention](schoolname, req).strip()
+                if  yitupaqu!= "":
+                    answer.append(yitupaqu)
+                    pj.InitSchool(schoolname,intention,yitupaqu)
+                    flag = 1
     if flag==1:
         print("before search")
 
